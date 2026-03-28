@@ -22,12 +22,6 @@ Updated 3/28/2026
 
 - Status:	Feasibility tested
 
-### Bobcat 225G Engine Idler ###
-
-(/bobcat-idler) -- A modern replacement for an automatic idle-down circuit for the engine on Miller Bobcat 225G welder/generators.  This is to replace a part that is now unobtanium.
-
-- Status:	Experimental / awaiting redesign
-
 ### Acoustic Trilaterator ###
 
 (/acoustic-trilaterator) -- Microphone array for pinpointing bullet location on a target by signal analysis of the shockwave's acoustic signature and time difference of arrival.
@@ -59,6 +53,12 @@ This project will be incorporated into the [STAR TRKR](#STAR TRKR) project.
 (/mandrel-4humanity) -- A 3D design and engineering project to save humanity and all its dependencies.  (NOT Barbara Mandrell, who is a 3D person)
 
 - Status:	Conceptual
+
+### Bobcat 225G Engine Idler ###
+
+(/bobcat-idler) -- A modern replacement for an automatic idle-down circuit for the engine on Miller Bobcat 225G welder/generators.  This is to replace a part that is now unobtanium.
+
+- Status:	Experimental / awaiting redesign
 
 ### Discerning Camera ###
 
@@ -98,7 +98,7 @@ Useful for estimating terrestrial radio coverage.  Inspired by tools published b
 
 ### Mains Monitor ###
 
-(/mains-monitor) -- For characterizing power line frequency drift, voltage consistency and long term accuracy.
+(/mains-monitor) -- Lab instrument for characterizing power line frequency drift, voltage consistency and long term accuracy.
 
 ### Mellanox NIC Active Cooler ###
 
