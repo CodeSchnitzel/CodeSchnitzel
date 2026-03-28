@@ -1,4 +1,4 @@
-# A Brief Overview of Projects In The KB5EO Lab #
+# A Brief Overview of Projects In The CodeSchnitzel Lab #
 
 Updated 3/28/2026
 
@@ -182,7 +182,7 @@ Useful for estimating terrestrial radio coverage.  Inspired by tools published b
 
 ### ThermaLog ###
 
-(/KB5EO-Temperature-Logger) -- A high precision, high accuracy logger that monitors multiple platinum wire temperature sensors as well as ambient environment conditions.
+A high precision, high accuracy logger that monitors multiple platinum wire temperature sensors as well as ambient environment conditions.
 
 - Status:	Pre-production validation (not public yet)
 
