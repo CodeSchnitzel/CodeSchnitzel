@@ -38,7 +38,7 @@ Updated 3/28/2026
 
 (/lab-automation) -- An AI driven laboratory instrument test orchestration suite.  Will construct and administer test procedures based on natural language requests, respect instrument capabilities / limitations & safety concerns and will gather & analyze data.
 
-- Status:	Finalizing requirements
+- Status:	Development (not yet public)
 
 ### [Astro Discovery / Star Finder](#https://github.com/CodeSchnitzel/astro-discovery) ###
 
@@ -50,7 +50,7 @@ This project will be incorporated into the [STAR TRKR](#STAR TRKR) project.
 
 ### Atomic Director ###
 
-(/atomic-director) -- A stack of commercial and custom hardware and software for managing a stack of high precision time and frequency standards.
+(/atomic-director) -- A stack of custom and commercial hardware and software for managing a stack of high precision time and frequency standards.
 
 - Status:	Mid-engineering
 
@@ -68,7 +68,7 @@ This project will be incorporated into the [STAR TRKR](#STAR TRKR) project.
 
 ### EZ Clock ###
 
-(/easy-clock) -- Inexpensive, hassle-free clocks that can be placed anywhere within range of a WiFi network with NTP access.  Modular for a choice of displays including round TFT's that show traditional clock/watch faces, 7-segment displays, Burroughs Panaplex displays and even speech synthesis.  Benefits from [7-Segment LED Display](#7-Segment LED Display) project and [Panaplex Plasma Display Driver](#Panaplex Plasma Display Driver).
+(/easy-clock) -- Inexpensive, hassle-free clocks that can be placed anywhere within range of a WiFi network with NTP access.  Modular for a choice of displays including round TFT's that show traditional clock/watch faces, 7-segment displays, Burroughs Panaplex displays and even speech synthesis.  Benefits from the [7-Segment LED Display](#7-Segment LED Display) project and [Panaplex Plasma Display Driver](#Panaplex Plasma Display Driver) project.
 
 ### Keithley SCAN2000 Card Clone ###
 
@@ -78,7 +78,7 @@ This project will be incorporated into the [STAR TRKR](#STAR TRKR) project.
 
 ### Laboratory Clock Generator ###
 
-(/clock-gen) -- A lab device for producing pulse trains over a wide range of user defined frequencies, based on an Si5354 frequency synthesizer chip.
+(/clock-gen) -- A lab device for producing pulse trains over a wide range of user defined frequencies, based on an Si5354 frequency synthesizer chip.  A central feature is a friendly user interface and extended feature set that are substantially different than other Si5354 projects.
 
 - Status:	Awaiting version 2 reengineering
 
