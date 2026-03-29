@@ -8,7 +8,85 @@ Updated 3/28/2026
 
 ------
 
-## Project Descriptions ##
+## Active Projects ##
+
+### AI Lab Automation Suite (aka JARVIS) ###
+
+(/lab-automation) -- An AI driven laboratory instrument test orchestration suite.  Will construct and administer test procedures based on natural language requests, respect instrument capabilities / limitations & safety concerns and will gather & analyze data.
+
+- Status:	Phase 1 running (incredible actual success during the first test!)
+
+### [Astro Discovery / Star Finder](#https://github.com/CodeSchnitzel/astro-discovery) ###
+
+(/astro-discovery) -- Started as a portable VM for running plate solver software to analyze an astrophotography photo and determine, based on stored star maps, what the point of aim, orientation and field of view are.  The project morphed into a Raspberry Pi Zero 2W appliance that can optionally connect directly to the camera and present a user interface through a WiFi connected phone.
+
+This project will be incorporated into the [STAR TRKR](#STAR TRKR) project.
+
+- Status:	Implemented / final testing
+
+### Atomic Director ###
+
+(/atomic-director) -- A stack of custom and commercial hardware and software for managing a stack of high precision time and frequency standards.
+
+- Status:	Mid-engineering
+
+### Mellanox NIC Active Cooler ###
+
+(/mellanox-cooler) -- A hardware enhancement for Mellanox MCX4121 NIC cards to prevent them from self destructing due to their pathetically inadequate thermal design.
+
+- Status:	Mid-engineering
+
+### PC Cooler Override ###
+
+(/cooler-override) -- Interposer device to allow a PC motherboard to control PC fans as normal, but to intervene and increase RPM when motherboard controls fail to manage thermal conditions.
+
+- Status:	Requirements gathering
+
+### [Photo Deduplicator](#https://github.com/CodeSchnitzel/Photo-Dedupe) ###
+
+(/photo-dedupe) -- A GoLang program for identifying duplicates among a large collection of photos, regardless of orientation or resolution, using perceptual fingerprinting.  Includes a facility to allow easy confirmation and resolution.
+
+- Status:	Implemented / final testing
+
+### STAR TRKR ###
+
+(/star-trkr) A collection of sub-projects that combine into a hardware and software package for astrophotography.  Named for the command reference silk-screened onto the guidance & navigation control panel in the Apollo Command Module and Lunar Module.
+
+#### 		Star Brain ####
+
+> (/star-trkr/star-brain)  -- The computer and software that control STAR TRKR and interface with various hardware components.
+>
+> - Status:	Hardware built / Software requirements gathering
+
+#### 	Star Finder ####
+
+> (/star-trkr/star-finder) -- An integration of the [Astro Discovery](#Astro Discovery) project into [Star Brain](#Star Brain) to merge plate solving and eventually polar alignment into the overall platform control.
+
+#### 		Tracker Muscle ####
+
+> (/star-trkr/trkr-muscle) -- A high precision linear actuator to control STAR TRKR's right ascension axis, matching the angular rotation of the Earth to keep camera equipment fixed on a single aimpoint.
+>
+> - Status:	Kinematics built, controller prototyped, awaiting round 2 engineering and software integration. Was used successfully for the April 8, 2024 total solar eclipse.
+
+### ThermaLog ###
+
+A high precision, high accuracy logger that monitors multiple platinum wire temperature sensors as well as ambient environment conditions.
+
+- Status:	Pre-production validation (not public yet)
+
+### VetteDirectional ###
+
+(/VettDirectional) -- Implementation of a circuit devised by George to permit usage of LED marker and turn signal bulbs in old GM vehicles.
+
+- Status:	Pre-production validation
+
+
+
+------
+
+
+
+## Queued Projects ## 
 
 ### 3-Channel Optical Chronograph ###
 
@@ -27,26 +105,6 @@ Updated 3/28/2026
 (/acoustic-trilaterator) -- Microphone array for pinpointing bullet location on a target by signal analysis of the shockwave's acoustic signature and time difference of arrival.
 
 - Status:	Scoping
-
-### AI Lab Automation Suite (aka JARVIS) ###
-
-(/lab-automation) -- An AI driven laboratory instrument test orchestration suite.  Will construct and administer test procedures based on natural language requests, respect instrument capabilities / limitations & safety concerns and will gather & analyze data.
-
-- Status:	Development (not yet public)
-
-### [Astro Discovery / Star Finder](#https://github.com/CodeSchnitzel/astro-discovery) ###
-
-(/astro-discovery) -- Started as a portable VM for running plate solver software to analyze an astrophotography photo and determine, based on stored star maps, what the point of aim, orientation and field of view are.  The project morphed into a Raspberry Pi Zero 2W appliance that can optionally connect directly to the camera and present a user interface through a WiFi connected phone.
-
-This project will be incorporated into the [STAR TRKR](#STAR TRKR) project.
-
-- Status:	Implemented / final testing
-
-### Atomic Director ###
-
-(/atomic-director) -- A stack of custom and commercial hardware and software for managing a stack of high precision time and frequency standards.
-
-- Status:	Mid-engineering
 
 ### Barbara Mandrel ###
 
@@ -100,12 +158,6 @@ Useful for estimating terrestrial radio coverage.  Inspired by tools published b
 
 (/mains-monitor) -- Lab instrument for characterizing power line frequency drift, voltage consistency and long term accuracy.
 
-### Mellanox NIC Active Cooler ###
-
-(/mellanox-cooler) -- A hardware enhancement for Mellanox MCX4121 NIC cards to prevent them from self destructing due to their pathetically inadequate thermal design.
-
-- Status:	Mid-engineering
-
 ### OCXO Calibrator ###
 
 (/ocxo-cal) -- An automated lab instrument for trimming free-running OCXO oscillators to serve as portable time standards for independent data acquisition devices that need to take time-coherent measurements.
@@ -117,18 +169,6 @@ Useful for estimating terrestrial radio coverage.  Inspired by tools published b
 (/displays/panaplex-driver) -- A modernized circuit to drive early 1970's Burroughs Panaplex displays.  To be used in conjunction with other projects such as [RPN Calculator](#RPN Calculator) and [EZ Clock](#EZ Clock).
 
 - Status:	Data gathering
-
-### PC Cooler Override ###
-
-(/cooler-override) -- Interposer device to allow a PC motherboard to control PC fans as normal, but to intervene and increase RPM when motherboard controls fail to manage thermal conditions.
-
-- Status:	Requirements gathering
-
-### [Photo Deduplicator](#https://github.com/CodeSchnitzel/Photo-Dedupe) ###
-
-(/photo-dedupe) -- A GoLang program for identifying duplicates among a large collection of photos, regardless of orientation or resolution, using perceptual fingerprinting.  Includes a facility to allow easy confirmation and resolution.
-
-- Status:	Implemented / final testing
 
 ### Quantum Keygen ###
 
@@ -148,26 +188,6 @@ Useful for estimating terrestrial radio coverage.  Inspired by tools published b
 
 - Status:	Conceptual / awaiting prerequisites
 
-### STAR TRKR ###
-
-(/star-trkr) A collection of sub-projects that combine into a hardware and software package for astrophotography.  Named for the command reference silk-screened onto the guidance & navigation control panel in the Apollo Command Module and Lunar Module.
-
-#### 		Star Brain ####
-
-> (/star-trkr/star-brain)  -- The computer and software that control STAR TRKR and interface with various hardware components.
->
-> - Status:	Requirements gathering
-
-#### 		Tracker Muscle ####
-
-> (/star-trkr/trkr-muscle) -- A high precision linear actuator to control STAR TRKR's right ascension axis, matching the angular rotation of the Earth to keep camera equipment fixed on a single aimpoint.
->
-> - Status:	Kinematics built, controller prototyped, awaiting round 2 engineering and software integration. Was used successfully for the April 8, 2024 total solar eclipse.
-
-#### 	Star Finder ####
-
-> (/star-trkr/star-finder) -- An integration of the [Astro Discovery](#Astro Discovery) project into [Star Brain](#Star Brain) to merge plate solving and eventually polar alignment into the overall platform control.
-
 ### TEC Controller ###
 
 (/tec-controller) -- Hardware and software to drive thermoelectric (Peltier) devices to control temperature in a test chamber using PID loops.
@@ -179,18 +199,6 @@ Useful for estimating terrestrial radio coverage.  Inspired by tools published b
 (/ring-generator) -- A circuit to ring a classic Western Electric telephone bell from a low voltage lithium battery.  A prerequisite to turn a rotary dial phone into a Bluetooth terminal.
 
 - Status:	Scoping
-
-### ThermaLog ###
-
-A high precision, high accuracy logger that monitors multiple platinum wire temperature sensors as well as ambient environment conditions.
-
-- Status:	Pre-production validation (not public yet)
-
-### VetteDirectional ###
-
-(/VettDirectional) -- Implementation of a circuit devised by George to permit usage of LED marker and turn signal bulbs in old GM vehicles.
-
-- Status:	Pre-production validation
 
 ### Visual Parts Database ###
 
