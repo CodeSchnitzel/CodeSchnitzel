@@ -2,8 +2,6 @@
 
 Updated 3/28/2026
 
-## Index ##
-
 [toc]
 
 ------
@@ -12,9 +10,11 @@ Updated 3/28/2026
 
 ### AI Lab Automation Suite (aka JARVIS) ###
 
-(/lab-automation) -- An AI driven laboratory instrument test orchestration suite.  Will construct and administer test procedures based on natural language requests, respect instrument capabilities / limitations & safety concerns and will gather & analyze data.
+(/lab-automation) -- An AI driven laboratory instrument test orchestration suite.  Jarvis constructs and administers complex test and experimentation procedures based on natural language requests.  It considers the capabilities & limitations of lab instrumentation, follows safety guidelines and gathers & analyzes data.  JARVIS combines local AI with cloud-based AI.
 
-- Status:	Phase 1 running (incredible actual success during the first test!)
+For its first test to ensure it could communicate with instruments, it self-discovered a real problem with a power supply.  JARVIS brought this to my attention and worked through problem identification.   It turned out to be a faulty switch external to the unit.
+
+- Status:	Phase 1 complete / Phase 2 planning
 
 ### [Astro Discovery / Star Finder](#https://github.com/CodeSchnitzel/astro-discovery) ###
 
@@ -26,7 +26,7 @@ This project will be incorporated into the [STAR TRKR](#STAR TRKR) project.
 
 ### Atomic Director ###
 
-(/atomic-director) -- A stack of custom and commercial hardware and software for managing a stack of high precision time and frequency standards.
+(/atomic-director) -- A stack of custom and commercial hardware and software for managing a stack of high precision time and GNSS-disciplined frequency standards.
 
 - Status:	Mid-engineering
 
@@ -34,7 +34,7 @@ This project will be incorporated into the [STAR TRKR](#STAR TRKR) project.
 
 (/mellanox-cooler) -- A hardware enhancement for Mellanox MCX4121 NIC cards to prevent them from self destructing due to their pathetically inadequate thermal design.
 
-- Status:	Mid-engineering
+- Status:	Design complete / Implementation phase
 
 ### PC Cooler Override ###
 
@@ -70,7 +70,7 @@ This project will be incorporated into the [STAR TRKR](#STAR TRKR) project.
 
 ### ThermaLog ###
 
-A high precision, high accuracy logger that monitors multiple platinum wire temperature sensors as well as ambient environment conditions.
+A high precision, high accuracy logger that monitors multiple platinum wire temperature sensors as well as ambient environment conditions.  ThermaLog emphasizes oversampling and precisely time-correlated measurements for both real time and offline analysis.
 
 - Status:	Pre-production validation (not public yet)
 
@@ -127,6 +127,8 @@ A high precision, high accuracy logger that monitors multiple platinum wire temp
 ### EZ Clock ###
 
 (/easy-clock) -- Inexpensive, hassle-free clocks that can be placed anywhere within range of a WiFi network with NTP access.  Modular for a choice of displays including round TFT's that show traditional clock/watch faces, 7-segment displays, Burroughs Panaplex displays and even speech synthesis.  Benefits from the [7-Segment LED Display](#7-Segment LED Display) project and [Panaplex Plasma Display Driver](#Panaplex Plasma Display Driver) project.
+
+- Status:	Awaiting prioritization (prototyping / POC is done)
 
 ### Keithley SCAN2000 Card Clone ###
 
