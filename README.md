@@ -16,6 +16,12 @@ For its first test to ensure it could communicate with instruments, it self-disc
 
 - Status:	Phase 1 complete / Phase 2 planning
 
+#### SPaaS (Speech As A Service)
+
+JARVIS and other machines around my environment will share centralized on-premise GPU-based Text-To-Speech and Speech-To-Text.
+
+- Status:	Planning
+
 ### [Astro Discovery / Star Finder](#https://github.com/CodeSchnitzel/astro-discovery)
 
 (/astro-discovery) -- Started as a portable VM for running plate solver software in the field to analyze an astrophotography photos and determine, based on stored star maps, what the point of aim, orientation and field of view are.  The project morphed into a Raspberry Pi Zero 2W appliance that can optionally connect directly to the camera and present a user interface through a WiFi connected phone.  It calculates point-of-aim error magnitude and direction to speed up accurate aiming.
@@ -54,21 +60,21 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
 
 (/star-trkr) A collection of sub-projects that combine into a hardware and software package for astrophotography.  Named for the command reference silk-screened onto the guidance & navigation control panel in the Apollo Command Module and Lunar Module.
 
-> #### Star Brain
+#### Star Brain
 
-> star-trkr/star-brain)  -- The computer and software that control STAR TRKR and interface with various hardware components.
+star-trkr/star-brain)  -- The computer and software that control STAR TRKR and interface with various hardware components.
 
-> Status:	Hardware built / Software requirements gathering
+Status:	Hardware built / Software requirements gathering
 
-> #### Star Finder
+#### Star Finder
 
-> star-trkr/star-finder) -- An integration of the [Astro Discovery](#Astro Discovery) project into [Star Brain](#Star Brain) to merge plate solving and eventually polar alignment into the overall platform control.
+star-trkr/star-finder) -- An integration of the [Astro Discovery](#Astro Discovery) project into [Star Brain](#Star Brain) to merge plate solving and eventually polar alignment into the overall platform control.
 
-> #### Tracker Muscle
+#### Tracker Muscle
 
-> (/star-trkr/trkr-muscle) -- A high precision linear actuator to control STAR TRKR's right ascension axis, matching the angular rotation of the Earth to keep camera equipment fixed on a single aimpoint.
+(/star-trkr/trkr-muscle) -- A high precision linear actuator to control STAR TRKR's right ascension axis, matching the angular rotation of the Earth to keep camera equipment fixed on a single aimpoint.
 
-> - Status:	Kinematics built, controller prototyped, awaiting round 2 engineering and software integration. Was used successfully for the April 8, 2024 total solar eclipse.
+- Status:	Kinematics built, controller prototyped, awaiting round 2 engineering and software integration. Was used successfully for the April 8, 2024 total solar eclipse.
 
 ### ThermaLog
 
@@ -137,6 +143,12 @@ A high precision, high accuracy logger that monitors multiple platinum wire temp
 (/easy-clock) -- Inexpensive, hassle-free clocks that can be placed anywhere within range of a WiFi network with NTP access.  Modular for a choice of displays including round TFT's that show traditional clock/watch faces, 7-segment displays, Burroughs Panaplex displays and even speech synthesis.  Benefits from the [7-Segment LED Display](#7-Segment LED Display) project and [Panaplex Plasma Display Driver](#Panaplex Plasma Display Driver) project.
 
 - Status:	Awaiting prioritization (prototyping / POC is done)
+
+### Gauss B Gone ###
+
+(/degauss-parts) A device that properly degausses small parts according to scientific principles rather than how cheaply can it be made.
+
+- Status:	Awaiting prioritization
 
 ### Keithley SCAN2000 Card Clone ###
 
