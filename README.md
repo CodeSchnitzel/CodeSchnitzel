@@ -1,80 +1,88 @@
 # A Brief Overview of Projects In The CodeSchnitzel Lab #
 
-Updated 3/28/2026
+Updated 3/29/2026
 
 [toc]
 
 ------
 
-## Active Projects ##
+## Active Projects
 
-### AI Lab Automation Suite (aka JARVIS) ###
+### AI Lab Automation Suite (aka JARVIS)
 
-(/lab-automation) -- An AI driven laboratory instrument test orchestration suite.  Jarvis constructs and administers complex test and experimentation procedures based on natural language requests.  It considers the capabilities & limitations of lab instrumentation, follows safety guidelines and gathers & analyzes data.  JARVIS combines local AI with cloud-based AI.
+(/lab-automation) -- An AI driven laboratory instrument test orchestration suite.  JARVIS constructs and administers complex test and experimental procedures based on natural language requests.  It considers the capabilities & limitations of lab instrumentation, follows safety guidelines and gathers & analyzes data.  JARVIS combines local AI with cloud-based AI.
 
 For its first test to ensure it could communicate with instruments, it self-discovered a real problem with a power supply.  JARVIS brought this to my attention and worked through problem identification.   It turned out to be a faulty switch external to the unit.
 
 - Status:	Phase 1 complete / Phase 2 planning
 
-### [Astro Discovery / Star Finder](#https://github.com/CodeSchnitzel/astro-discovery) ###
+### [Astro Discovery / Star Finder](#https://github.com/CodeSchnitzel/astro-discovery)
 
-(/astro-discovery) -- Started as a portable VM for running plate solver software to analyze an astrophotography photo and determine, based on stored star maps, what the point of aim, orientation and field of view are.  The project morphed into a Raspberry Pi Zero 2W appliance that can optionally connect directly to the camera and present a user interface through a WiFi connected phone.
+(/astro-discovery) -- Started as a portable VM for running plate solver software in the field to analyze an astrophotography photos and determine, based on stored star maps, what the point of aim, orientation and field of view are.  The project morphed into a Raspberry Pi Zero 2W appliance that can optionally connect directly to the camera and present a user interface through a WiFi connected phone.  It calculates point-of-aim error magnitude and direction to speed up accurate aiming.
 
-This project will be incorporated into the [STAR TRKR](#STAR TRKR) project.
+Concept to working device in about 3 hours.
+
+This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project, but it is currently autonomous and presents its UI via a web browser on a cell phone or tablet.
 
 - Status:	Implemented / final testing
 
-### Atomic Director ###
+### Atomic Director
 
 (/atomic-director) -- A stack of custom and commercial hardware and software for managing a stack of high precision time and GNSS-disciplined frequency standards.
 
 - Status:	Mid-engineering
 
-### Mellanox NIC Active Cooler ###
+### Mellanox NIC Active Cooler
 
 (/mellanox-cooler) -- A hardware enhancement for Mellanox MCX4121 NIC cards to prevent them from self destructing due to their pathetically inadequate thermal design.
 
 - Status:	Design complete / Implementation phase
 
-### PC Cooler Override ###
+### PC Cooler Override
 
 (/cooler-override) -- Interposer device to allow a PC motherboard to control PC fans as normal, but to intervene and increase RPM when motherboard controls fail to manage thermal conditions.
 
 - Status:	Requirements gathering
 
-### [Photo Deduplicator](#https://github.com/CodeSchnitzel/Photo-Dedupe) ###
+### [Photo Deduplicator](#https://github.com/CodeSchnitzel/Photo-Dedupe)
 
 (/photo-dedupe) -- A GoLang program for identifying duplicates among a large collection of photos, regardless of orientation or resolution, using perceptual fingerprinting.  Includes a facility to allow easy confirmation and resolution.
 
-- Status:	Implemented / final testing
+- Status:	Implemented (processed >200,000 photos) / final testing
 
-### STAR TRKR ###
+### STAR TRKR
 
 (/star-trkr) A collection of sub-projects that combine into a hardware and software package for astrophotography.  Named for the command reference silk-screened onto the guidance & navigation control panel in the Apollo Command Module and Lunar Module.
 
-#### 		Star Brain ####
+> #### Star Brain
 
-> (/star-trkr/star-brain)  -- The computer and software that control STAR TRKR and interface with various hardware components.
->
-> - Status:	Hardware built / Software requirements gathering
+> star-trkr/star-brain)  -- The computer and software that control STAR TRKR and interface with various hardware components.
 
-#### 	Star Finder ####
+> Status:	Hardware built / Software requirements gathering
 
-> (/star-trkr/star-finder) -- An integration of the [Astro Discovery](#Astro Discovery) project into [Star Brain](#Star Brain) to merge plate solving and eventually polar alignment into the overall platform control.
+> #### Star Finder
 
-#### 		Tracker Muscle ####
+> star-trkr/star-finder) -- An integration of the [Astro Discovery](#Astro Discovery) project into [Star Brain](#Star Brain) to merge plate solving and eventually polar alignment into the overall platform control.
+
+> #### Tracker Muscle
 
 > (/star-trkr/trkr-muscle) -- A high precision linear actuator to control STAR TRKR's right ascension axis, matching the angular rotation of the Earth to keep camera equipment fixed on a single aimpoint.
->
+
 > - Status:	Kinematics built, controller prototyped, awaiting round 2 engineering and software integration. Was used successfully for the April 8, 2024 total solar eclipse.
 
-### ThermaLog ###
+### ThermaLog
 
 A high precision, high accuracy logger that monitors multiple platinum wire temperature sensors as well as ambient environment conditions.  ThermaLog emphasizes oversampling and precisely time-correlated measurements for both real time and offline analysis.
 
 - Status:	Pre-production validation (not public yet)
 
-### VetteDirectional ###
+### Voice Scribe
+
+(/voice-scribe) -- Uses local AI to transcribe voice recorder files into text and then categorize them.
+
+- Status:	Transcription implemented very successfully on ~250 voice files.  Project paused due to GPU thermal issues.
+
+### VetteDirectional
 
 (/VettDirectional) -- Implementation of a circuit devised by George to permit usage of LED marker and turn signal bulbs in old GM vehicles.
 
@@ -122,7 +130,7 @@ A high precision, high accuracy logger that monitors multiple platinum wire temp
 
 (/insightful-observer) -- An edge AI camera that observes everything but only reports what is significant.
 
-- Status:	Feasibility study complete
+- Status:	Hardware acquired / feasibility study complete / awaiting prioritization
 
 ### EZ Clock ###
 
@@ -146,7 +154,7 @@ A high precision, high accuracy logger that monitors multiple platinum wire temp
 
 (/dc-ups) -- A high efficiency intelligent lithium batter based UPS for powering lab equipment that runs on DC power.
 
-- Status:	Early requirements gathering
+- Status:	Scoping
 
 ### Line Of Sight Calculator ###
 
@@ -159,6 +167,8 @@ Useful for estimating terrestrial radio coverage.  Inspired by tools published b
 ### Mains Monitor ###
 
 (/mains-monitor) -- Lab instrument for characterizing power line frequency drift, voltage consistency and long term accuracy.
+
+- Status:	Scoping
 
 ### OCXO Calibrator ###
 
@@ -188,7 +198,7 @@ Useful for estimating terrestrial radio coverage.  Inspired by tools published b
 
 (/rpn-calculator) -- A Reverse Polish Notation calculator that is both imminently practical and amusingly anachronistic, utilizing math libraries from CERN and offering extreme modularity of keyboard inputs, display options and API access.  Combines the best of all classic HP calculators throughout history.
 
-- Status:	Conceptual / awaiting prerequisites
+- Status:	Scoping / awaiting prerequisites
 
 ### TEC Controller ###
 
