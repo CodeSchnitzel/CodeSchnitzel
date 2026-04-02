@@ -38,17 +38,17 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
 
 - Status:	Mid-engineering
 
+### Chrono Tester
+
+(/speeding-bullet) -- A quick & dirty project to test an Oehler 35P optical chronograph by simulating the photodiodes with optocouplers and a microcontroller.
+
+- Status:	In progress
+
 ### Mellanox NIC Active Cooler
 
 (/mellanox-cooler) -- A hardware enhancement for Mellanox MCX4121 NIC cards to prevent them from self destructing due to their pathetically inadequate thermal design.
 
 - Status:	Design complete / Implementation phase
-
-### PC Cooler Override
-
-(/cooler-override) -- Interposer device to allow a PC motherboard to control PC fans as normal, but to intervene and increase RPM when motherboard controls fail to manage thermal conditions.
-
-- Status:	Requirements gathering
 
 ### [Photo Deduplicator](#https://github.com/CodeSchnitzel/Photo-Dedupe)
 
@@ -62,13 +62,13 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
 
 #### Star Brain
 
-star-trkr/star-brain)  -- The computer and software that control STAR TRKR and interface with various hardware components.
+(/star-trkr/star-brain)  -- The computer and software that control STAR TRKR and interface with various hardware components.
 
 Status:	Hardware built / Software requirements gathering
 
 #### Star Finder
 
-star-trkr/star-finder) -- An integration of the [Astro Discovery](#Astro Discovery) project into [Star Brain](#Star Brain) to merge plate solving and eventually polar alignment into the overall platform control.
+(/star-trkr/star-finder) -- An integration of the [Astro Discovery](#Astro Discovery) project into [Star Brain](#Star Brain) to merge plate solving and eventually polar alignment into the overall platform control.
 
 #### Tracker Muscle
 
@@ -193,6 +193,12 @@ Useful for estimating terrestrial radio coverage.  Inspired by tools published b
 (/displays/panaplex-driver) -- A modernized circuit to drive early 1970's Burroughs Panaplex displays.  To be used in conjunction with other projects such as [RPN Calculator](#RPN Calculator) and [EZ Clock](#EZ Clock).
 
 - Status:	Data gathering
+
+### PC Cooler Override
+
+(/cooler-override) -- Interposer device to allow a PC motherboard to control PC fans as normal, but to intervene and increase RPM when motherboard controls fail to manage thermal conditions.
+
+- Status:	Requirements gathering
 
 ### Quantum Keygen ###
 
