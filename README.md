@@ -30,13 +30,19 @@ Concept to working device in about 3 hours.
 
 This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project, but it is currently autonomous and presents its UI via a web browser on a cell phone or tablet.
 
-- Status:	Implemented / final testing
+- Status:	Complete / awaiting field testing
 
 ### Atomic Director
 
 (/atomic-director) -- A stack of custom and commercial hardware and software for managing a stack of high precision time and GNSS-disciplined frequency standards.
 
-- Status:	Mid-engineering
+- Status:
+  - Equipment rack built
+  - Controller computer, touchscreen & rack unit built
+  - Protocol Translator designed, firmware unit tested -- awaiting in-circuit testing
+  - Comms system in engineering stage
+  - Switching & Signals systems in scoping
+
 
 ### Chrono Tester
 
