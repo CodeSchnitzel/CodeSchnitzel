@@ -38,8 +38,8 @@ Concept to working device in about 3 hours.
 This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project, but it is currently autonomous and presents its UI via a web browser on a cell phone or tablet.
 
 - Status:	Complete / awaiting field testing if we ever have clear skies again
-    - <img src="images/astro-discovery-device_1080.jpg" alt="Astro Discovery device (Raspberry Pi Zero)" style="zoom:15%;" target="new"/>
-    - <img src="images/astro-discovery-UI.jpeg" alt="Astro Discovery user interface" style="zoom:10%;" target="new"/>
+    - <a href="images/astro-discovery-device_1080.jpg" target="new">Astro Discovery device (Raspberry Pi Zero)</a>
+    - <a href="images/astro-discovery-ui.jpeg" target="new">Astro Discovery user interface</a>
 
 ### <u>Atomic Director</u>
 
