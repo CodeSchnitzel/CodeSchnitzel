@@ -39,7 +39,7 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
 
 - Status:	Complete / awaiting field testing if we ever have clear skies again
     - <a href="images/astro-discovery-device_1080.jpg" target="_blank">Astro Discovery device (Raspberry Pi Zero)</a>
-    - <a href="images/astro-discovery-UI.jpeg" target="_blank">Astro Discovery user interface</a>
+    - <a href="images/astro-discovery-ui.jpeg" target="_blank">Astro Discovery user interface</a>
 
 ### <u>Atomic Director</u>
 
@@ -48,11 +48,11 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
 - Status:
   - Equipment rack built
   - Controller computer, touchscreen & rack unit built; now converting from 2D to 3D CAD for continuing development
-  	- <img src="https://github.com/CodeSchnitzel/CodeSchnitzel/tree/main/images/atomic-director-development_1080.JPG" alt="Atomic Director rack unit" style="zoom:25%;" />
+  	- <a href="images/atomic-director-development_1080.JPG" target="_blank">Atomic Director rack unit photo</a>
   - Protocol Translator designed, firmware is unit-tested -- awaiting in-circuit testing
   - Comms system in engineering stage; PCB designed, prepping for production
-  - <img src="https://github.com/CodeSchnitzel/CodeSchnitzel/tree/main/images/KB5EO-Atomic-Director-comms-subsystem-PCB-Render-Rev-A-Front.png" alt="Comms PCB render (front view)" style="zoom:25%;" />
-  	- <img src="https://github.com/CodeSchnitzel/CodeSchnitzel/tree/main/images/KB5EO-Atomic-Director-comms-subsystem-PCB Render-Rev-A-Back.png" alt="Comms PCB render (back view)" style="zoom:25%;" />
+    - <a href="images/KB5EO-Atomic-Director-comms-subsystem-PCB-Render-Rev-A-Front.png" target="_blank">Comms circuit board render (front view)</a>
+    - <a href="images/KB5EO-Atomic-Director-comms-subsystem-PCB Render-Rev-A-Back.png" target="_blank">Comms circuit board render (back view)</a>
   - Switching & Signals systems in scoping
   - Power Control & Monitoring in scoping
 
@@ -102,8 +102,7 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
   - Calibration/alignment fixture built
   - Controller prototyped, awaiting round 2 engineering and software integration
   - Was used successfully for the April 8, 2024 total solar eclipse.
-
-  	- <img src="https://github.com/CodeSchnitzel/CodeSchnitzel/tree/main/images/IMG_0218_1080.JPG" alt="STAR TRKR, April 8 2024 Total Eclipse" style="zoom:25%;" />
+  	- <a href="images/IMG_0218_1080.JPG" target="_blank">STAR TRKR, April 8 2024 Total Eclipse</a>
 
 ### <u>ThermaLog</u>
 
@@ -119,10 +118,8 @@ A high precision, high accuracy logger that monitors multiple platinum wire temp
 
 - Status:	Pre-production validation
 
-### 
 
 ------
-
 
 
 ## Completed Projects ## 
