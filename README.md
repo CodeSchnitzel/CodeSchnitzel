@@ -82,7 +82,7 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
   - Controller prototyped, awaiting round 2 engineering and software integration
   - Was used successfully for the April 8, 2024 total solar eclipse.
 
-<img src="P:\project-index\images\IMG_0218_1080.JPG" alt="IMG_0218_1080" style="zoom:25%;" />
+<img src="https://github.com/CodeSchnitzel/CodeSchnitzel/tree/main/images/IMG_0218_1080.JPG" alt="STAR TRKR, April 8 2024 Total Eclipse" style="zoom:25%;" />
 
 ### <u>ThermaLog</u>
 
