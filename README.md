@@ -15,13 +15,20 @@ Updated 4/8/2026
 
 For its first test to ensure it could communicate with instruments, it self-discovered a real problem with a power supply.  JARVIS brought this to my attention and worked through problem identification.   It turned out to be a faulty switch external to the unit.
 
-- Status:	Phase 1 complete / Phase 2 planning
+- Status:
+  - Phase 1 complete
+  - Phase 2 planning
+
 
 #### *SPaaS (Speech As A Service)*
 
-JARVIS and other machines around my network will share centralized on-premise GPU-based Text-To-Speech and Speech-To-Text.  Heavy lifting happens on my WOPR machine (local AI) and audio is pipelined to and from my Windows desktop machine via a compiled service because that's where the best audio hardware is.  Any machine that can call an API can use the service.
+JARVIS and other machines around my network now share centralized on-premise GPU-based Text-To-Speech and Speech-To-Text.  Heavy lifting happens on my WOPR machine (local AI) and audio is pipelined to and from my Windows desktop machine via a compiled service because that's where the best audio hardware is.  Any machine that can call an API can use the service.  JARVIS has his own unique voice and other devices around the lab have distinct voices as well.
 
-- Status:	Design complete / Building out
+- Status:
+  - Done!  Up and running for internal devices including iPhone.
+  - Planning accessibility to internal AI tools over the internet via VPN
+
+- Keeping this listed under "Active Projects" because it's a sub-project to JARVIS.
 
 ### [Astro Discovery / Star Finder](#https://github.com/CodeSchnitzel/astro-discovery)
 
@@ -32,6 +39,9 @@ Concept to working device in about 3 hours.
 This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project, but it is currently autonomous and presents its UI via a web browser on a cell phone or tablet.
 
 - Status:	Complete / awaiting field testing if we ever have clear skies again
+  - ![Astro Discovery device (Raspberry Pi Zero)](images/astro-discovery-device_1080.jpg)
+  - ![Astro Discovery user interface](images/astro-discovery-UI.jpeg)
+
 
 ### <u>Atomic Director</u>
 
@@ -47,6 +57,16 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
   	- <img src="https://github.com/CodeSchnitzel/CodeSchnitzel/tree/main/images/KB5EO-Atomic-Director-comms-subsystem-PCB Render-Rev-A-Back.png" alt="Comms PCB render (back view)" style="zoom:25%;" />
   - Switching & Signals systems in scoping
   - Power Control & Monitoring in scoping
+
+### <u>Infrastructure Build Out Project</u>
+(/infrastructure) -- This is an ever-evolving project to build network services, VM's, LXC containers and physical devices to facilitate all development & lab activities.
+- Services deployed:
+     - Internal reverse proxy and certificate authority (Nginx)
+     - Data management stack (SQL Server, Prometheus, InfluxDB)
+     - Data collection & analytics (Mosquitto, Grafana, etc.)
+     - Artificial intelligence (Ollama, Jarvis, IEEE-488 networking tools, etc.)
+     - Speech As A Service
+- Status:	Permanent / Ongoing
 
 ### <u>Mellanox NIC Active Cooler</u>
 
@@ -85,7 +105,7 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
   - Controller prototyped, awaiting round 2 engineering and software integration
   - Was used successfully for the April 8, 2024 total solar eclipse.
 
-	- <img src="https://github.com/CodeSchnitzel/CodeSchnitzel/tree/main/images/IMG_0218_1080.JPG" alt="STAR TRKR, April 8 2024 Total Eclipse" style="zoom:25%;" />
+  	- <img src="https://github.com/CodeSchnitzel/CodeSchnitzel/tree/main/images/IMG_0218_1080.JPG" alt="STAR TRKR, April 8 2024 Total Eclipse" style="zoom:25%;" />
 
 ### <u>ThermaLog</u>
 
