@@ -42,8 +42,8 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
   - Controller computer, touchscreen & rack unit built; now converting from 2D to 3D CAD for continuing development
   - Protocol Translator designed, firmware is unit-tested -- awaiting in-circuit testing
   - Comms system in engineering stage; PCB designed, prepping for production
-  - <img src="https://github.com/CodeSchnitzel/CodeSchnitzel/tree/main/images/KB5EO-Atomic-Director-comms-subsystem-PCB-Render-Rev-A-Front" alt="Comms PCB render (front view)" style="zoom:25%;" />
-  - <img src="https://github.com/CodeSchnitzel/CodeSchnitzel/tree/main/images/KB5EO-Atomic-Director-comms-subsystem-PCB-Render-Rev-A-Back" alt="Comms PCB render (back view)" style="zoom:25%;" />
+  - <img src="https://github.com/CodeSchnitzel/CodeSchnitzel/tree/main/images/KB5EO-Atomic-Director-comms-subsystem-PCB-Render-Rev-A-Front.png" alt="Comms PCB render (front view)" style="zoom:25%;" />
+  - <img src="https://github.com/CodeSchnitzel/CodeSchnitzel/tree/main/images/KB5EO-Atomic-Director-comms-subsystem-PCB-Render-Rev-A-Back.png" alt="Comms PCB render (back view)" style="zoom:25%;" />
   - Switching & Signals systems in scoping
   - Power Control & Monitoring in scoping
 
