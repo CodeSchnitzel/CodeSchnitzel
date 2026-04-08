@@ -42,6 +42,8 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
   - Controller computer, touchscreen & rack unit built; now converting from 2D to 3D CAD for continuing development
   - Protocol Translator designed, firmware is unit-tested -- awaiting in-circuit testing
   - Comms system in engineering stage; PCB designed, prepping for production
+  - <img src="https://github.com/CodeSchnitzel/CodeSchnitzel/tree/main/images/KB5EO-Atomic-Director-comms-subsystem-PCB-Render-Rev-A-Front" alt="Comms PCB render (front view)" style="zoom:25%;" />
+  - <img src="https://github.com/CodeSchnitzel/CodeSchnitzel/tree/main/images/KB5EO-Atomic-Director-comms-subsystem-PCB-Render-Rev-A-Back" alt="Comms PCB render (back view)" style="zoom:25%;" />
   - Switching & Signals systems in scoping
   - Power Control & Monitoring in scoping
 
@@ -82,7 +84,7 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
   - Controller prototyped, awaiting round 2 engineering and software integration
   - Was used successfully for the April 8, 2024 total solar eclipse.
 
-<img src="https://github.com/CodeSchnitzel/CodeSchnitzel/tree/main/images/IMG_0218_1080.JPG" alt="STAR TRKR, April 8 2024 Total Eclipse" style="zoom:25%;" />
+- <img src="https://github.com/CodeSchnitzel/CodeSchnitzel/tree/main/images/IMG_0218_1080.JPG" alt="STAR TRKR, April 8 2024 Total Eclipse" style="zoom:25%;" />
 
 ### <u>ThermaLog</u>
 
