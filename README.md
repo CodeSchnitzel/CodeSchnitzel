@@ -19,7 +19,6 @@ For its first test to ensure it could communicate with instruments, it self-disc
   - Phase 1 complete
   - Phase 2 planning
 
-
 #### *SPaaS (Speech As A Service)*
 
 JARVIS and other machines around my network now share centralized on-premise GPU-based Text-To-Speech and Speech-To-Text.  Heavy lifting happens on my WOPR machine (local AI) and audio is pipelined to and from my Windows desktop machine via a compiled service because that's where the best audio hardware is.  Any machine that can call an API can use the service.  JARVIS has his own unique voice and other devices around the lab have distinct voices as well.
@@ -39,9 +38,8 @@ Concept to working device in about 3 hours.
 This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project, but it is currently autonomous and presents its UI via a web browser on a cell phone or tablet.
 
 - Status:	Complete / awaiting field testing if we ever have clear skies again
-  - ![Astro Discovery device (Raspberry Pi Zero)](images/astro-discovery-device_1080.jpg)
-  - ![Astro Discovery user interface](images/astro-discovery-UI.jpeg)
-
+    - <img src="images/astro-discovery-device_1080.jpg" alt="Astro Discovery device (Raspberry Pi Zero)" style="zoom:15%;" />
+    - <img src="images/astro-discovery-UI.jpeg" alt="Astro Discovery user interface" style="zoom:10%;" />
 
 ### <u>Atomic Director</u>
 
