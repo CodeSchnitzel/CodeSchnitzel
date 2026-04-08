@@ -1,6 +1,7 @@
 # A Brief Overview of Projects In The CodeSchnitzel Lab #
 
-Updated 4/3/2026
+Updated 4/8/2026
+
 
 [toc]
 
@@ -8,7 +9,7 @@ Updated 4/3/2026
 
 ## Active Projects
 
-### AI Lab Automation Suite (aka JARVIS)
+### <u>AI Lab Automation Suite (aka JARVIS)</u>
 
 (/lab-automation) -- An AI driven laboratory instrument test orchestration suite.  JARVIS constructs and administers complex test and experimental procedures based on natural language requests.  It considers the capabilities & limitations of lab instrumentation, follows safety guidelines and gathers & analyzes data.  JARVIS combines local AI with cloud-based AI.
 
@@ -16,11 +17,11 @@ For its first test to ensure it could communicate with instruments, it self-disc
 
 - Status:	Phase 1 complete / Phase 2 planning
 
-#### SPaaS (Speech As A Service)
+#### *SPaaS (Speech As A Service)*
 
-JARVIS and other machines around my environment will share centralized on-premise GPU-based Text-To-Speech and Speech-To-Text.
+JARVIS and other machines around my network will share centralized on-premise GPU-based Text-To-Speech and Speech-To-Text.  Heavy lifting happens on my WOPR machine (local AI) and audio is pipelined to and from my Windows desktop machine via a compiled service because that's where the best audio hardware is.  Any machine that can call an API can use the service.
 
-- Status:	Planning
+- Status:	Design complete / Building out
 
 ### [Astro Discovery / Star Finder](#https://github.com/CodeSchnitzel/astro-discovery)
 
@@ -30,77 +31,106 @@ Concept to working device in about 3 hours.
 
 This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project, but it is currently autonomous and presents its UI via a web browser on a cell phone or tablet.
 
-- Status:	Complete / awaiting field testing
+- Status:	Complete / awaiting field testing if we ever have clear skies again
 
-### Atomic Director
+### <u>Atomic Director</u>
 
 (/atomic-director) -- A stack of custom and commercial hardware and software for managing a stack of high precision time and GNSS-disciplined frequency standards.
 
 - Status:
   - Equipment rack built
-  - Controller computer, touchscreen & rack unit built
-  - Protocol Translator designed, firmware unit tested -- awaiting in-circuit testing
-  - Comms system in engineering stage
+  - Controller computer, touchscreen & rack unit built; now converting from 2D to 3D CAD for continuing development
+  - Protocol Translator designed, firmware is unit-tested -- awaiting in-circuit testing
+  - Comms system in engineering stage; PCB designed, prepping for production
   - Switching & Signals systems in scoping
+  - Power Control & Monitoring in scoping
 
-
-### Chrono Tester
-
-(/speeding-bullet) -- A quick & dirty project to test an Oehler 35P optical chronograph by simulating the photodiodes with optocouplers and a microcontroller.
-
-- Status:	In progress
-
-### Mellanox NIC Active Cooler
+### <u>Mellanox NIC Active Cooler</u>
 
 (/mellanox-cooler) -- A hardware enhancement for Mellanox MCX4121 NIC cards to prevent them from self destructing due to their pathetically inadequate thermal design.
 
 - Status:	Design complete / Implementation phase
 
+### <u>STAR TRKR</u>
+
+(/star-trkr) A collection of sub-projects that combine into a hardware and software package for astrophotography.  Named for the command reference silk-screened onto the guidance & navigation control panel in the Apollo Command Module and Lunar Module.
+
+#### *Star Brain*
+
+(/star-trkr/star-brain)  -- The computer and software that control STAR TRKR and interface with various hardware components.
+
+- Status:
+  - Camera platform built
+    - Leveling and azimuth stage built (not motorized yet)
+    - Elevation stage built & motorized
+    - Right ascension stage and camera mounts built
+  - Software requirements gathering
+  - Motor drives / hardware controller in scoping
+  - Polar alignment fixture in design
+
+#### *Star Finder*
+
+(/star-trkr/star-finder) -- An integration of the [Astro Discovery](#Astro Discovery) project into [Star Brain](#Star Brain) to merge plate solving and eventually polar alignment into the overall platform control.
+
+#### *Tracker Muscle*
+
+(/star-trkr/trkr-muscle) -- A high precision linear actuator to control STAR TRKR's right ascension axis, matching the angular rotation of the Earth to keep camera equipment fixed on a single aimpoint.
+
+- Status:
+  - Kinematics built
+  - Calibration/alignment fixture built
+  - Controller prototyped, awaiting round 2 engineering and software integration
+  - Was used successfully for the April 8, 2024 total solar eclipse.
+
+<img src="P:\project-index\images\IMG_0218_1080.JPG" alt="IMG_0218_1080" style="zoom:25%;" />
+
+### <u>ThermaLog</u>
+
+A high precision, high accuracy logger that monitors multiple platinum wire temperature sensors as well as ambient environment conditions.  ThermaLog emphasizes oversampling and precisely time-correlated measurements for both real time and offline analysis.
+
+- Status:
+  - Fully prototyped & tested
+  - Pre-production validation (not public yet)
+
+### <u>VetteDirectional</u>
+
+(/VetteDirectional) -- Implementation of a circuit devised by George to permit usage of LED marker and turn signal bulbs in old GM vehicles.
+
+- Status:	Pre-production validation
+
+### 
+
+------
+
+
+
+## Completed Projects ## 
+
+### <u>Chrono Tester</u>
+
+(/speeding-bullet) -- A quick & dirty project to test an Oehler 35P optical chronograph by simulating the photodiodes with optocouplers and a microcontroller.
+
+- Status:	Complete
+
 ### [Photo Deduplicator](#https://github.com/CodeSchnitzel/Photo-Dedupe)
 
 (/photo-dedupe) -- A GoLang program for identifying duplicates among a large collection of photos, regardless of orientation or resolution, using perceptual fingerprinting.  Includes a facility to allow easy confirmation and resolution.
 
-- Status:	Implemented (processed >200,000 photos) / final testing
+- Status:	Complete.  Processed >200,000 photos in the first run.
 
-### STAR TRKR
+### <u>Voice Scribe</u>
 
-(/star-trkr) A collection of sub-projects that combine into a hardware and software package for astrophotography.  Named for the command reference silk-screened onto the guidance & navigation control panel in the Apollo Command Module and Lunar Module.
+(/voice-scribe) -- Uses local AI to transcribe voice recorder files into text and then categorize them.  Transcription implemented very successfully on ~250 voice files.  Encountered GPU thermal issues that were resolved via software by taking fan control over from the GPU's driver.
 
-#### Star Brain
+- Status:	Complete
 
-(/star-trkr/star-brain)  -- The computer and software that control STAR TRKR and interface with various hardware components.
+### <u>WOPR Local AI</u>
 
-Status:	Hardware built / Software requirements gathering
+A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) running Ollama and local LLM / inference models.  Runs Docker to augment speech and other related services.
 
-#### Star Finder
+- Status:	Complete
 
-(/star-trkr/star-finder) -- An integration of the [Astro Discovery](#Astro Discovery) project into [Star Brain](#Star Brain) to merge plate solving and eventually polar alignment into the overall platform control.
-
-#### Tracker Muscle
-
-(/star-trkr/trkr-muscle) -- A high precision linear actuator to control STAR TRKR's right ascension axis, matching the angular rotation of the Earth to keep camera equipment fixed on a single aimpoint.
-
-- Status:	Kinematics built, controller prototyped, awaiting round 2 engineering and software integration. Was used successfully for the April 8, 2024 total solar eclipse.
-
-### ThermaLog
-
-A high precision, high accuracy logger that monitors multiple platinum wire temperature sensors as well as ambient environment conditions.  ThermaLog emphasizes oversampling and precisely time-correlated measurements for both real time and offline analysis.
-
-- Status:	Pre-production validation (not public yet)
-
-### Voice Scribe
-
-(/voice-scribe) -- Uses local AI to transcribe voice recorder files into text and then categorize them.
-
-- Status:	Transcription implemented very successfully on ~250 voice files.  Project paused due to GPU thermal issues.
-
-### VetteDirectional
-
-(/VettDirectional) -- Implementation of a circuit devised by George to permit usage of LED marker and turn signal bulbs in old GM vehicles.
-
-- Status:	Pre-production validation
-
-
+### 
 
 ------
 
