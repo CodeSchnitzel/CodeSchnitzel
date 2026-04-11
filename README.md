@@ -1,6 +1,6 @@
 # A Brief Overview of Projects In The CodeSchnitzel Lab #
 
-Updated 4/9/2026
+Updated 4/10/2026
 
 
 [toc]
@@ -21,19 +21,19 @@ For its first test to ensure it could communicate with instruments, it self-disc
 
 #### *SPaaS (Speech As A Service)*
 
-JARVIS and other machines around my network now share centralized on-premise GPU-based Text-To-Speech and Speech-To-Text.  Heavy lifting happens on my WOPR machine (local AI) and audio is pipelined to and from my Windows desktop machine via a compiled service because that's where the best audio hardware is.  Any machine that can call an API can use the service.  JARVIS has his own unique voice and other devices around the lab have distinct voices as well.
+JARVIS and other machines around my network now share centralized on-premise GPU-based Text-To-Speech and Speech-To-Text.  Heavy lifting happens on my WOPR machine (local AI engine) and audio is pipelined to and from my Windows desktop machine via a compiled service because that's where the best audio hardware is.  Any machine that can call an API can use the service.  JARVIS has his own unique voice and other devices around the lab have distinct voices as well.
+
+Also implemented VPN to allow secure and seamless conversational access from anywhere via iPhone, iPad, laptop, etc.
 
 - Status:
-  - Done!  Up and running for internal devices including iPhone.
-  - Planning accessibility to internal AI tools over the internet via VPN
-
+  - Done!  Up and running
 - Keeping this listed under "Active Projects" because it's a sub-project to JARVIS.
 
 ### [Astro Discovery / Star Finder](#https://github.com/CodeSchnitzel/astro-discovery)
 
 (/astro-discovery) -- Started as a portable VM for running plate solver software in the field to analyze an astrophotography photos and determine, based on stored star maps, what the point of aim, orientation and field of view are.  The project morphed into a Raspberry Pi Zero 2W appliance that can optionally connect directly to the camera and present a user interface through a WiFi connected phone.  It calculates point-of-aim error magnitude and direction to speed up accurate aiming.
 
-Concept to working device in about 3 hours.
+From concept to working device in about 3 hours.
 
 This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project, but it is currently autonomous and presents its UI via a web browser on a cell phone or tablet.
 
@@ -60,10 +60,15 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
 (/infrastructure) -- This is an ever-evolving project to build network services, VM's, LXC containers and physical devices to facilitate all development & lab activities.
 - Services deployed:
      - Internal reverse proxy and certificate authority (Nginx)
+     - Ad blocking (Pi-Hole)
+     - Wide area notifications
      - Data management stack (SQL Server, Prometheus, InfluxDB)
      - Data collection & analytics (Mosquitto, Grafana, etc.)
-     - Artificial intelligence (Ollama, Jarvis, IEEE-488 networking tools, etc.)
-     - Speech As A Service
+     - Artificial intelligence core (Ollama, Jarvis, IEEE-488 networking tools, etc.)
+     - SPeech As A Service
+- Services in development:
+     - Deep knowledge stockpile
+
 - Status:	Permanent / Ongoing
 
 ### <u>Mellanox NIC Active Cooler</u>
