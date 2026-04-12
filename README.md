@@ -16,8 +16,8 @@ Updated 4/10/2026
 For its first test to ensure it could communicate with instruments, it self-discovered a real problem with a power supply.  JARVIS brought this to my attention and worked through problem identification.   It turned out to be a faulty switch external to the unit.
 
 - Status:
-  - Phase 1 complete
-  - Phase 2 planning
+  - Phase 1 implemented & in performance tuning
+  - Phase 2 planning (to include Deep Knowledge Stockpile mentioned below)
 
 #### *SPaaS (Speech As A Service)*
 
@@ -27,6 +27,7 @@ Also implemented VPN to allow secure and seamless conversational access from any
 
 - Status:
   - Done!  Up and running
+  - Experimenting with optimizations.  Soon to have a better GPU.
 - Keeping this listed under "Active Projects" because it's a sub-project to JARVIS.
 
 ### [Astro Discovery / Star Finder](#https://github.com/CodeSchnitzel/astro-discovery)
@@ -59,15 +60,17 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
 ### <u>Infrastructure Build Out Project</u>
 (/infrastructure) -- This is an ever-evolving project to build network services, VM's, LXC containers and physical devices to facilitate all development & lab activities.
 - Services deployed:
-     - Internal reverse proxy and certificate authority (Nginx)
+     - Upgraded, simplified & hardened firewall
+     - Internal reverse proxy & certificate authority
      - Ad blocking (Pi-Hole)
      - Wide area notifications
      - Data management stack (SQL Server, Prometheus, InfluxDB)
      - Data collection & analytics (Mosquitto, Grafana, etc.)
-     - Artificial intelligence core (Ollama, Jarvis, IEEE-488 networking tools, etc.)
+     - Artificial intelligence core (Ollama, Jarvis, AI tool kits, etc.)
      - SPeech As A Service
 - Services in development:
-     - Deep knowledge stockpile
+     - Deep Knowledge Stockpile
+     - Internal security layering & monitoring
 
 - Status:	Permanent / Ongoing
 
@@ -103,10 +106,10 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
 (/star-trkr/trkr-muscle) -- A high precision linear actuator to control STAR TRKR's right ascension axis, matching the angular rotation of the Earth to keep camera equipment fixed on a single aimpoint.
 
 - Status:
-  - Kinematics built
-  - Calibration/alignment fixture built
-  - Controller prototyped, awaiting round 2 engineering and software integration
-  - Was used successfully for the April 8, 2024 total solar eclipse.
+  - Kinematics built.
+  - Calibration/alignment fixture built.
+  - Controller prototyped, awaiting round-2 engineering and software integration.
+  - Was used successfully for the April 8, 2024 total solar eclipse using prototype controller.
   	- <a href="images/IMG_0218_1080.JPG" target="_blank">STAR TRKR, April 8 2024 Total Eclipse</a>
 
 ### <u>ThermaLog</u>
