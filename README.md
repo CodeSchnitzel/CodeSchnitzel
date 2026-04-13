@@ -1,6 +1,6 @@
 # A Brief Overview of Projects In The CodeSchnitzel Lab #
 
-Updated 4/11/2026
+Updated 4/13/2026
 
 
 [toc]
@@ -175,6 +175,12 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 (/displays/led7seg-driver) -- A simple, expandable multi-line LED display.  Complements the [RPN Calculator](#RPN Calculator) project.
 
 - Status:	Feasibility tested
+
+### Acoustic Laser
+
+(/acoustic-laser) -- OK, not a laser, but a collection of experimental acoustic beamforming experiments.  I'm mostly interested in adaptive sound delivery but also curious about microphone matrix arrays.
+
+- Status:	Scoping
 
 ### Acoustic Trilaterator ###
 
