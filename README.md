@@ -1,6 +1,6 @@
 # A Brief Overview of Projects In The CodeSchnitzel Lab #
 
-Updated 4/13/2026
+Updated 4/15/2026
 
 
 [toc]
@@ -13,15 +13,21 @@ Updated 4/13/2026
 
 (/lab-automation) -- An AI driven laboratory instrument test orchestration suite.  JARVIS constructs and administers complex test and experimental procedures based on natural language requests.  It considers the capabilities & limitations of lab instrumentation, follows safety guidelines and gathers & analyzes data.  JARVIS combines local AI with cloud-based AI.
 
-For its first test to ensure it could communicate with instruments, it self-discovered a real problem with a power supply.  JARVIS brought this to my attention and worked through problem identification.   It turned out to be a faulty switch external to the unit.
+For its first test to ensure it could communicate with instruments, it self-discovered a real problem with a power supply.  JARVIS brought this to my attention and worked through problem identification.   It turned out to be a faulty switch between test instruments.
 
 - Status:
-  - Phase 1 implemented & in performance tuning
-  - Phase 2 planning (to include Deep Knowledge Stockpile mentioned below)
+  - | Phase   | Description                     | Current Status                         |
+    | ------- | ------------------------------- | -------------------------------------- |
+    | Phase 1 | Foundational work               | Completed                              |
+    | Phase 2 | Speech                          | Completed                              |
+    | Phase 3 | Knowledge building              | In progress (Deep Knowledge Stockpile) |
+    | Phase 4 | Safety & orchestration          | Planning                               |
+    | Phase 5 | Skills building & data analysis | Planning (AI upgrades underway)        |
+    | Phase 6 | Advanced procedures             | Planning                               |
 
 #### *SPaaS (Speech As A Service)*
 
-JARVIS and other machines around my network now share centralized on-premise GPU-based Text-To-Speech and Speech-To-Text.  Heavy lifting happens on my WOPR machine (local AI engine) and audio is pipelined to and from my Windows desktop machine via a compiled service because that's where the best audio hardware is.  Any machine that can call an API can use the service.  JARVIS has his own unique voice and other devices around the lab have distinct voices as well.
+JARVIS and other machines around my network now share centralized on-premise GPU-based Text-To-Speech and Speech-To-Text.  Heavy lifting happens on my WOPR machine (local AI engine) and audio is pipelined to and from a Windows desktop machine via a compiled service because that's where the best audio hardware is.  Any machine that can call an API or connect to a net socket can use the service.  JARVIS has his own unique voice and other devices around the lab have distinct voices as well.
 
 Also implemented VPN to allow secure and seamless conversational access from anywhere via iPhone, iPad, laptop, etc.
 
@@ -65,11 +71,12 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
      - Ad blocking (Pi-Hole)
      - Wide area notifications
      - Data management stack (SQL Server, Prometheus, InfluxDB)
-     - Data collection & analytics (Mosquitto, Grafana, etc.)
+     - Data collection & analytics (Mosquitto, Telegraf, Grafana, etc.)
      - Artificial intelligence core (Ollama, Jarvis, AI tool kits, etc.)
+     - File sync (SyncThing)
      - SPeech As A Service
 - Services in development:
-     - Deep Knowledge Stockpile
+     - Deep Knowledge Stockpile (expanded from Andrej Karpathy's "LLM Wiki" idea)
      - Internal security layering & monitoring
 
 - Status:	Permanent / Ongoing
@@ -89,17 +96,19 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
 (/star-trkr/star-brain)  -- The computer and software that control STAR TRKR and interface with various hardware components.
 
 - Status:
-  - Camera platform built
-    - Leveling and azimuth stage built (not motorized yet)
-    - Elevation stage built & motorized
-    - Right ascension stage and camera mounts built
-  - Software requirements gathering
-  - Motor drives / hardware controller in scoping
-  - Polar alignment fixture in design
+  
+	| Subsection                 | Status                                                       |
+  | -------------------------- | ------------------------------------------------------------ |
+  | Main controller computer   | In prototyping                                               |
+  | Software development       | Scoping                                                      |
+  | Camera platform            | Built                                                        |
+  | Azimuth & elevation stages | Mechanics built<br />Elevation is motorized<br />Need azimuth motor + controller |
+  | Polar alignment fixture    | In mechanical design                                         |
+  
 
 #### *Star Finder*
 
-(/star-trkr/star-finder) -- An integration of the [Astro Discovery](#Astro Discovery) project into [Star Brain](#Star Brain) to merge plate solving and eventually polar alignment into the overall platform control.
+(/star-trkr/star-finder) -- An integration of the [Astro Discovery](#Astro Discovery) project into [Star Brain](#Star Brain) to merge plate solving and eventually polar alignment into the overall platform control.  This will become a software integration with the main controller computer.
 
 #### *Tracker Muscle*
 
@@ -156,7 +165,7 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 
 - Status:	Complete
 
-### 
+
 
 ------
 
@@ -220,7 +229,7 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 
 ### Keithley SCAN2000 Card Clone ###
 
-(/scan2k-clone) -- This is an implementation of a third-party project by "[cozdas](https://github.com/cozdas/CozScan2020)" to replicate a Keithley SCAN2000 20-channel data acquisition scanner but with SSR's instead of mechanical relays.
+(/external-repos/scan2k-clone) -- This is an implementation of a third-party project by "[cozdas](https://github.com/cozdas/CozScan2020)" to replicate a Keithley SCAN2000 20-channel data acquisition scanner but with SSR's instead of mechanical relays.
 
 - Status:	Awaiting prioritization
 
@@ -282,7 +291,7 @@ Useful for estimating terrestrial radio coverage.  Inspired by tools published b
 
 ### RPN Calculator ###
 
-(/rpn-calculator) -- A Reverse Polish Notation calculator that is both imminently practical and amusingly anachronistic, utilizing math libraries from CERN and offering extreme modularity of keyboard inputs, display options and API access.  Combines the best of all classic HP calculators throughout history.
+(/rpn-calculator) -- A Reverse Polish Notation calculator that is both imminently practical and amusingly anachronistic.  Utilizes math libraries from CERN and offers extreme modularity of keyboard inputs, display options and API integration.  Combines the most-loved features of my many calculators and omits the things I dislike.
 
 - Status:	Scoping / awaiting prerequisites
 
