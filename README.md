@@ -16,14 +16,14 @@ Updated 4/15/2026
 For its first test to ensure it could communicate with instruments, it self-discovered a real problem with a power supply.  JARVIS brought this to my attention and worked through problem identification.   It turned out to be a faulty switch between test instruments.
 
 - Status:
-  - | Phase   | Description                     | Current Status                         |
-    | ------- | ------------------------------- | -------------------------------------- |
-    | Phase 1 | Foundational work               | Completed                              |
-    | Phase 2 | Speech                          | Completed                              |
-    | Phase 3 | Knowledge building              | In progress (Deep Knowledge Stockpile) |
-    | Phase 4 | Safety & orchestration          | Planning                               |
-    | Phase 5 | Skills building & data analysis | Planning (AI upgrades underway)        |
-    | Phase 6 | Advanced procedures             | Planning                               |
+  - | Phase                              | Current Status                                               |
+    | ---------------------------------- | ------------------------------------------------------------ |
+    | 1. Foundational work               | :heavy_check_mark: Completed                                 |
+    | 2. Speech                          | :heavy_check_mark: Completed                                 |
+    | 3. Knowledge building              | :construction: In progress (Deep Knowledge Stockpile)        |
+    | 4. Safety & orchestration          | :thought_balloon: Planning                                   |
+    | 5. Skills building & data analysis | :thought_balloon: / :construction: Planning (AI upgrades underway) |
+    | 6. Advanced procedures             | :thought_balloon: Planning                                   |
 
 #### *SPaaS (Speech As A Service)*
 
@@ -32,8 +32,8 @@ JARVIS and other machines around my network now share centralized on-premise GPU
 Also implemented VPN to allow secure and seamless conversational access from anywhere via iPhone, iPad, laptop, etc.
 
 - Status:
-  - Done!  Up and running
-  - Experimenting with optimizations.  Soon to have a better GPU.
+  - :heavy_check_mark: Done!  Up and running
+  - :construction: Experimenting with optimizations.  Soon to have a better GPU.
 - Keeping this listed under "Active Projects" because it's a sub-project to JARVIS.
 
 ### [Astro Discovery / Star Finder](#https://github.com/CodeSchnitzel/astro-discovery)
@@ -44,7 +44,7 @@ From concept to working device in about 3 hours.
 
 This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project, but it is currently autonomous and presents its UI via a web browser on a cell phone or tablet.
 
-- Status:	Complete / awaiting field testing if we ever have clear skies again
+- Status:	:heavy_check_mark: Complete / awaiting field testing if we ever have clear skies again
     - <a href="images/astro-discovery-device_1080.jpg" target="_blank">Astro Discovery device (Raspberry Pi Zero)</a>
     - <a href="images/astro-discovery-ui.jpeg" target="_blank">Astro Discovery user interface</a>
 
@@ -53,15 +53,15 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
 (/atomic-director) -- A stack of custom and commercial hardware and software for managing a stack of high precision time and GNSS-disciplined frequency standards.
 
 - Status:
-  - Equipment rack built
-  - Controller computer, touchscreen & rack unit built; now converting from 2D to 3D CAD for continuing development
+  - :heavy_check_mark: Equipment rack built
+  - :construction: Controller computer, touchscreen & rack unit built; now converting from 2D to 3D CAD for continuing development
   	- <a href="images/atomic-director-development_1080.JPG" target="_blank">Atomic Director rack unit photo</a>
-  - Protocol Translator designed, firmware is unit-tested -- awaiting in-circuit testing
-  - Comms system in engineering stage; PCB designed, prepping for production
+  - :construction: Protocol Translator designed, firmware is unit-tested -- awaiting in-circuit testing
+  - :construction: Comms system in engineering stage; PCB designed, prepping for production
     - <a href="images/KB5EO-Atomic-Director-comms-subsystem-PCB-Render-Rev-A-Front.png" target="_blank">Comms circuit board render (front view)</a>
     - <a href="images/KB5EO-Atomic-Director-comms-subsystem-PCB Render-Rev-A-Back.png" target="_blank">Comms circuit board render (back view)</a>
-  - Switching & Signals systems in scoping
-  - Power Control & Monitoring in scoping
+  - :thought_balloon: Switching & Signals systems in scoping
+  - :thought_balloon: Power Control & Monitoring in scoping
 
 ### <u>Infrastructure Build Out Project</u>
 (/infrastructure) -- This is an ever-evolving project to build network services, VM's, LXC containers and physical devices to facilitate all development & lab activities.
@@ -85,7 +85,7 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
 
 (/mellanox-cooler) -- A hardware enhancement for Mellanox MCX4121 NIC cards to prevent them from self destructing due to their pathetically inadequate thermal design.
 
-- Status:	Design complete / Implementation phase
+- Status:	:construction: Design complete / Implementation phase
 
 ### <u>STAR TRKR</u>
 
@@ -99,11 +99,11 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
   
 	| Subsection                 | Status                                                       |
   | -------------------------- | ------------------------------------------------------------ |
-  | Main controller computer   | In prototyping                                               |
-  | Software development       | Scoping                                                      |
-  | Camera platform            | Built                                                        |
-  | Azimuth & elevation stages | Mechanics built<br />Elevation is motorized<br />Need azimuth motor + controller |
-  | Polar alignment fixture    | In mechanical design                                         |
+  | Main controller computer   | :construction: In prototyping                                |
+  | Software development       | :thought_balloon: Scoping                                    |
+  | Camera platform            | :heavy_check_mark: Built                                     |
+  | Azimuth & elevation stages | :heavy_check_mark: Mechanics built<br />:heavy_check_mark: Elevation is motorized<br />:thought_balloon: Need azimuth motor + controller |
+  | Polar alignment fixture    | :construction: In mechanical design                          |
   
 
 #### *Star Finder*
@@ -115,10 +115,10 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
 (/star-trkr/trkr-muscle) -- A high precision linear actuator to control STAR TRKR's right ascension axis, matching the angular rotation of the Earth to keep camera equipment fixed on a single aimpoint.
 
 - Status:
-  - Kinematics built.
-  - Calibration/alignment fixture built.
-  - Controller prototyped, awaiting round-2 engineering and software integration.
-  - Was used successfully for the April 8, 2024 total solar eclipse using prototype controller.
+  - :heavy_check_mark: Kinematics built.
+  - :heavy_check_mark: Calibration/alignment fixture built.
+  - :construction: Controller prototyped, awaiting round-2 engineering and software integration.
+  - :heavy_check_mark: Was used successfully for the April 8, 2024 total solar eclipse using prototype controller.
   	- <a href="images/IMG_0218_1080.JPG" target="_blank">STAR TRKR, April 8 2024 Total Eclipse</a>
 
 ### <u>ThermaLog</u>
@@ -126,14 +126,14 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
 A high precision, high accuracy logger that monitors multiple platinum wire temperature sensors as well as ambient environment conditions.  ThermaLog emphasizes oversampling and precisely time-correlated measurements for both real time and offline analysis.
 
 - Status:
-  - Fully prototyped & tested
-  - Pre-production validation (not public yet)
+  - :heavy_check_mark: Fully prototyped & tested
+  - :construction: Pre-production validation (not public yet)
 
 ### <u>VetteDirectional</u>
 
 (/VetteDirectional) -- Implementation of a circuit devised by George to permit usage of LED marker and turn signal bulbs in old GM vehicles.
 
-- Status:	Pre-production validation
+- Status:	:construction: Pre-production validation
 
 
 ------
@@ -145,25 +145,25 @@ A high precision, high accuracy logger that monitors multiple platinum wire temp
 
 (/speeding-bullet) -- A quick & dirty project to test an Oehler 35P optical chronograph by simulating the photodiodes with optocouplers and a microcontroller.
 
-- Status:	Complete
+- Status:	:heavy_check_mark: Complete
 
 ### [Photo Deduplicator](#https://github.com/CodeSchnitzel/Photo-Dedupe)
 
 (/photo-dedupe) -- A GoLang program for identifying duplicates among a large collection of photos, regardless of orientation or resolution, using perceptual fingerprinting.  Includes a facility to allow easy confirmation and resolution.
 
-- Status:	Complete.  Processed >200,000 photos in the first run.
+- Status:	:heavy_check_mark: Complete.  Processed >200,000 photos in the first run.
 
 ### <u>Voice Scribe</u>
 
 (/voice-scribe) -- Uses local AI to transcribe voice recorder files into text and then categorize them.  Transcription implemented very successfully on ~250 voice files.  Encountered GPU thermal issues that were resolved via software by taking fan control over from the GPU's driver.
 
-- Status:	Complete
+- Status:	:heavy_check_mark: Complete
 
 ### <u>WOPR Local AI</u>
 
 A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) running Ollama and local LLM / inference models.  Runs Docker to augment speech and other related services.
 
-- Status:	Complete
+- Status:	:heavy_check_mark: Complete
 
 
 
@@ -177,7 +177,7 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 
 (/chrono-3chan) -- A modernized version of an Oehler model 35P chronograph with wireless feature for better data management and analysis.
 
-- Status:	Scoping
+- Status:	:thought_balloon: Scoping
 
 ### 7-Segment LED Display ###
 
@@ -189,61 +189,61 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 
 (/acoustic-laser) -- OK, not a laser, but a collection of experimental acoustic beamforming experiments.  I'm mostly interested in adaptive sound delivery but also curious about microphone matrix arrays.
 
-- Status:	Scoping
+- Status:	:thought_balloon: Scoping
 
 ### Acoustic Trilaterator ###
 
 (/acoustic-trilaterator) -- Microphone array for pinpointing bullet location on a target by signal analysis of the shockwave's acoustic signature and time difference of arrival.
 
-- Status:	Scoping
+- Status:	:thought_balloon: Scoping
 
 ### Barbara Mandrel ###
 
 (/mandrel-4humanity) -- A 3D design and engineering project to save humanity and all its dependencies.  (NOT Barbara Mandrell, who is a 3D person)
 
-- Status:	Conceptual
+- Status:	:thought_balloon: Conceptual
 
 ### Bobcat 225G Engine Idler ###
 
 (/bobcat-idler) -- A modern replacement for an automatic idle-down circuit for the engine on Miller Bobcat 225G welder/generators.  This is to replace a part that is now unobtanium.
 
-- Status:	Experimental / awaiting redesign
+- Status:	:thought_balloon: Experimental / awaiting redesign
 
 ### Discerning Camera ###
 
 (/insightful-observer) -- An edge AI camera that observes everything but only reports what is significant.
 
-- Status:	Hardware acquired / feasibility study complete / awaiting prioritization
+- Status:	:construction: Hardware acquired / feasibility study complete / awaiting prioritization
 
 ### EZ Clock ###
 
 (/easy-clock) -- Inexpensive, hassle-free clocks that can be placed anywhere within range of a WiFi network with NTP access.  Modular for a choice of displays including round TFT's that show traditional clock/watch faces, 7-segment displays, Burroughs Panaplex displays and even speech synthesis.  Benefits from the [7-Segment LED Display](#7-Segment LED Display) project and [Panaplex Plasma Display Driver](#Panaplex Plasma Display Driver) project.
 
-- Status:	Awaiting prioritization (prototyping / POC is done)
+- Status:	:thought_balloon: Awaiting prioritization (prototyping / POC is done)
 
 ### Gauss B Gone ###
 
 (/degauss-parts) A device that properly degausses small parts according to scientific principles rather than how cheaply can it be made.
 
-- Status:	Awaiting prioritization
+- Status:	:thought_balloon: Awaiting prioritization
 
 ### Keithley SCAN2000 Card Clone ###
 
 (/external-repos/scan2k-clone) -- This is an implementation of a third-party project by "[cozdas](https://github.com/cozdas/CozScan2020)" to replicate a Keithley SCAN2000 20-channel data acquisition scanner but with SSR's instead of mechanical relays.
 
-- Status:	Awaiting prioritization
+- Status:		:thought_balloon: Awaiting prioritization
 
 ### Laboratory Clock Generator ###
 
 (/clock-gen) -- A lab device for producing pulse trains over a wide range of user defined frequencies, based on an Si5354 frequency synthesizer chip.  A central feature is a friendly user interface and extended feature set that are substantially different than other Si5354 projects.
 
-- Status:	Awaiting version 2 reengineering
+- Status:	:construction: Awaiting version 2 reengineering
 
 ### Laboratory DC UPS ###
 
 (/dc-ups) -- A high efficiency intelligent lithium batter based UPS for powering lab equipment that runs on DC power.
 
-- Status:	Scoping
+- Status:	:thought_balloon: Scoping
 
 ### Line Of Sight Calculator ###
 
@@ -251,70 +251,70 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 
 Useful for estimating terrestrial radio coverage.  Inspired by tools published by Green Bay Professional Packet Radio.
 
-- Status:	Data gathered / awaiting prioritization
+- Status:	:thought_balloon: Data gathered / awaiting prioritization
 
 ### Mains Monitor ###
 
 (/mains-monitor) -- Lab instrument for characterizing power line frequency drift, voltage consistency and long term accuracy.
 
-- Status:	Scoping
+- Status:	:thought_balloon: Scoping
 
 ### OCXO Calibrator ###
 
 (/ocxo-cal) -- An automated lab instrument for trimming free-running OCXO oscillators to serve as portable time standards for independent data acquisition devices that need to take time-coherent measurements.
 
-- Status:	Scoping
+- Status:	:thought_balloon: Scoping
 
 ### Panaplex Plasma Display Driver ###
 
 (/displays/panaplex-driver) -- A modernized circuit to drive early 1970's Burroughs Panaplex displays.  To be used in conjunction with other projects such as [RPN Calculator](#RPN Calculator) and [EZ Clock](#EZ Clock).
 
-- Status:	Data gathering
+- Status:	:thought_balloon: Data gathering
 
 ### PC Cooler Override
 
 (/cooler-override) -- Interposer device to allow a PC motherboard to control PC fans as normal, but to intervene and increase RPM when motherboard controls fail to manage thermal conditions.
 
-- Status:	Requirements gathering
+- Status:	:thought_balloon: Requirements gathering
 
 ### Quantum Keygen ###
 
 (/quantum-keygen) -- A high entropy cryptography key generator based on radioactive decay and other sources of true entropy.
 
-- Status:	Feasibility study
+- Status:	:thought_balloon: Feasibility study
 
 ### Retro Crypto ###
 
 (/retry-crypto) -- An anachronistic cryptography device based on a massive array of obsolete Intel 8294A 56-bit DES encryption chips.
 
-- Status:	Hardware acquired / awaiting prioritization
+- Status:	:thought_balloon: Hardware acquired / awaiting prioritization
 
 ### RPN Calculator ###
 
 (/rpn-calculator) -- A Reverse Polish Notation calculator that is both imminently practical and amusingly anachronistic.  Utilizes math libraries from CERN and offers extreme modularity of keyboard inputs, display options and API integration.  Combines the most-loved features of my many calculators and omits the things I dislike.
 
-- Status:	Scoping / awaiting prerequisites
+- Status:	:thought_balloon: Scoping / awaiting prerequisites
 
 ### TEC Controller ###
 
 (/tec-controller) -- Hardware and software to drive thermoelectric (Peltier) devices to control temperature in a test chamber using PID loops.
 
-- Status:	Scoping
+- Status:	:thought_balloon: Scoping
 
 ### Telephone Ring Generator ###
 
 (/ring-generator) -- A circuit to ring a classic Western Electric telephone bell from a low voltage lithium battery.  A prerequisite to turn a rotary dial phone into a Bluetooth terminal.
 
-- Status:	Scoping
+- Status:	:thought_balloon: Scoping
 
 ### Visual Parts Database ###
 
 (/visual-database) -- A web-based interactive lookup tool for finding information about parts on an assembly drawings.
 
-- Status:	Data gathered / awaiting prioritization
+- Status:	:thought_balloon: Data gathered / awaiting prioritization
 
 ### YIG Oscillator Driver ###
 
 (/yig-driver) -- Experimental circuits to learn fine control of Advantek and Hewlett Packard YIG oscillators.
 
-- Status:	Scoping
+- Status:	:thought_balloon: Scoping
