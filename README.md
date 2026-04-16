@@ -143,7 +143,7 @@ A high precision, high accuracy logger that monitors multiple platinum wire temp
 
 ### <u>Chrono Tester</u>
 
-(/speeding-bullet) -- A quick & dirty project to test an Oehler 35P optical chronograph by simulating the photodiodes with optocouplers and a microcontroller.
+(/speeding-bullet) -- A quick & dirty project to test an Oehler 35P optical chronograph by simulating the photodiodes with 4N25 optocouplers and a microcontroller.
 
 - Status:	:heavy_check_mark: Complete
 
@@ -201,25 +201,25 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 
 (/mandrel-4humanity) -- A 3D design and engineering project to save humanity and all its dependencies.  (NOT Barbara Mandrell, who is a 3D person)
 
-- Status:	:thought_balloon: Conceptual
+- Status:	 :thought_balloon: Conceptual
 
 ### Bobcat 225G Engine Idler ###
 
 (/bobcat-idler) -- A modern replacement for an automatic idle-down circuit for the engine on Miller Bobcat 225G welder/generators.  This is to replace a part that is now unobtanium.
 
-- Status:	:thought_balloon: Experimental / awaiting redesign
+- Status:	 :thought_balloon: Experimental / awaiting redesign
 
 ### Discerning Camera ###
 
 (/insightful-observer) -- An edge AI camera that observes everything but only reports what is significant.
 
-- Status:	:construction: Hardware acquired / feasibility study complete / awaiting prioritization
+- Status:	 :construction: Hardware acquired / feasibility study complete / awaiting prioritization
 
 ### EZ Clock ###
 
 (/easy-clock) -- Inexpensive, hassle-free clocks that can be placed anywhere within range of a WiFi network with NTP access.  Modular for a choice of displays including round TFT's that show traditional clock/watch faces, 7-segment displays, Burroughs Panaplex displays and even speech synthesis.  Benefits from the [7-Segment LED Display](#7-Segment LED Display) project and [Panaplex Plasma Display Driver](#Panaplex Plasma Display Driver) project.
 
-- Status:	:thought_balloon: Awaiting prioritization (prototyping / POC is done)
+- Status:	 :thought_balloon: Awaiting prioritization (prototyping / POC is done)
 
 ### Gauss B Gone ###
 
@@ -231,7 +231,7 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 
 (/external-repos/scan2k-clone) -- This is an implementation of a third-party project by "[cozdas](https://github.com/cozdas/CozScan2020)" to replicate a Keithley SCAN2000 20-channel data acquisition scanner but with SSR's instead of mechanical relays.
 
-- Status:		:thought_balloon: Awaiting prioritization
+- Status:	:thought_balloon: Awaiting prioritization
 
 ### Laboratory Clock Generator ###
 
