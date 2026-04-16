@@ -133,7 +133,7 @@ A high precision, high accuracy logger that monitors multiple platinum wire temp
 
 (/VetteDirectional) -- Implementation of a circuit devised by George to permit usage of LED marker and turn signal bulbs in old GM vehicles.
 
-- Status:	:construction: Pre-production validation
+- Status:	 :construction: Pre-production validation
 
 
 ------
@@ -145,31 +145,27 @@ A high precision, high accuracy logger that monitors multiple platinum wire temp
 
 (/speeding-bullet) -- A quick & dirty project to test an Oehler 35P optical chronograph by simulating the photodiodes with 4N25 optocouplers and a microcontroller.
 
-- Status:	:heavy_check_mark: Complete
+- Status:	 :heavy_check_mark: Complete
 
 ### [Photo Deduplicator](#https://github.com/CodeSchnitzel/Photo-Dedupe)
 
 (/photo-dedupe) -- A GoLang program for identifying duplicates among a large collection of photos, regardless of orientation or resolution, using perceptual fingerprinting.  Includes a facility to allow easy confirmation and resolution.
 
-- Status:	:heavy_check_mark: Complete.  Processed >200,000 photos in the first run.
+- Status:	 :heavy_check_mark: Complete.  Processed >200,000 photos in the first run.
 
 ### <u>Voice Scribe</u>
 
 (/voice-scribe) -- Uses local AI to transcribe voice recorder files into text and then categorize them.  Transcription implemented very successfully on ~250 voice files.  Encountered GPU thermal issues that were resolved via software by taking fan control over from the GPU's driver.
 
-- Status:	:heavy_check_mark: Complete
+- Status:	 :heavy_check_mark: Complete
 
 ### <u>WOPR Local AI</u>
 
 A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) running Ollama and local LLM / inference models.  Runs Docker to augment speech and other related services.
 
-- Status:	:heavy_check_mark: Complete
-
-
+- Status:	 :heavy_check_mark: Complete
 
 ------
-
-
 
 ## Queued Projects ## 
 
@@ -177,25 +173,25 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 
 (/chrono-3chan) -- A modernized version of an Oehler model 35P chronograph with wireless feature for better data management and analysis.
 
-- Status:	:thought_balloon: Scoping
+- Status:	 :thought_balloon: Scoping
 
 ### 7-Segment LED Display ###
 
 (/displays/led7seg-driver) -- A simple, expandable multi-line LED display.  Complements the [RPN Calculator](#RPN Calculator) project.
 
-- Status:	Feasibility tested
+- Status:	 :construction: Feasibility tested
 
 ### Acoustic Laser
 
 (/acoustic-laser) -- OK, not a laser, but a collection of experimental acoustic beamforming experiments.  I'm mostly interested in adaptive sound delivery but also curious about microphone matrix arrays.
 
-- Status:	:thought_balloon: Scoping
+- Status:	 :thought_balloon: Scoping
 
 ### Acoustic Trilaterator ###
 
 (/acoustic-trilaterator) -- Microphone array for pinpointing bullet location on a target by signal analysis of the shockwave's acoustic signature and time difference of arrival.
 
-- Status:	:thought_balloon: Scoping
+- Status:	 :thought_balloon: Scoping
 
 ### Barbara Mandrel ###
 
@@ -225,25 +221,25 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 
 (/degauss-parts) A device that properly degausses small parts according to scientific principles rather than how cheaply can it be made.
 
-- Status:	:thought_balloon: Awaiting prioritization
+- Status:	 :thought_balloon: Awaiting prioritization
 
 ### Keithley SCAN2000 Card Clone ###
 
 (/external-repos/scan2k-clone) -- This is an implementation of a third-party project by "[cozdas](https://github.com/cozdas/CozScan2020)" to replicate a Keithley SCAN2000 20-channel data acquisition scanner but with SSR's instead of mechanical relays.
 
-- Status:	:thought_balloon: Awaiting prioritization
+- Status:	 :thought_balloon: Awaiting prioritization
 
 ### Laboratory Clock Generator ###
 
 (/clock-gen) -- A lab device for producing pulse trains over a wide range of user defined frequencies, based on an Si5354 frequency synthesizer chip.  A central feature is a friendly user interface and extended feature set that are substantially different than other Si5354 projects.
 
-- Status:	:construction: Awaiting version 2 reengineering
+- Status:	 :construction: Awaiting version 2 reengineering
 
 ### Laboratory DC UPS ###
 
 (/dc-ups) -- A high efficiency intelligent lithium batter based UPS for powering lab equipment that runs on DC power.
 
-- Status:	:thought_balloon: Scoping
+- Status:	 :thought_balloon: Scoping
 
 ### Line Of Sight Calculator ###
 
@@ -251,70 +247,70 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 
 Useful for estimating terrestrial radio coverage.  Inspired by tools published by Green Bay Professional Packet Radio.
 
-- Status:	:thought_balloon: Data gathered / awaiting prioritization
+- Status:	 :thought_balloon: Data gathered / awaiting prioritization
 
 ### Mains Monitor ###
 
 (/mains-monitor) -- Lab instrument for characterizing power line frequency drift, voltage consistency and long term accuracy.
 
-- Status:	:thought_balloon: Scoping
+- Status:	 :thought_balloon: Scoping
 
 ### OCXO Calibrator ###
 
 (/ocxo-cal) -- An automated lab instrument for trimming free-running OCXO oscillators to serve as portable time standards for independent data acquisition devices that need to take time-coherent measurements.
 
-- Status:	:thought_balloon: Scoping
+- Status:	 :thought_balloon: Scoping
 
 ### Panaplex Plasma Display Driver ###
 
 (/displays/panaplex-driver) -- A modernized circuit to drive early 1970's Burroughs Panaplex displays.  To be used in conjunction with other projects such as [RPN Calculator](#RPN Calculator) and [EZ Clock](#EZ Clock).
 
-- Status:	:thought_balloon: Data gathering
+- Status:	 :thought_balloon: Data gathering
 
 ### PC Cooler Override
 
 (/cooler-override) -- Interposer device to allow a PC motherboard to control PC fans as normal, but to intervene and increase RPM when motherboard controls fail to manage thermal conditions.
 
-- Status:	:thought_balloon: Requirements gathering
+- Status:	 :thought_balloon: Requirements gathering
 
 ### Quantum Keygen ###
 
 (/quantum-keygen) -- A high entropy cryptography key generator based on radioactive decay and other sources of true entropy.
 
-- Status:	:thought_balloon: Feasibility study
+- Status:	 :thought_balloon: Feasibility study
 
 ### Retro Crypto ###
 
 (/retry-crypto) -- An anachronistic cryptography device based on a massive array of obsolete Intel 8294A 56-bit DES encryption chips.
 
-- Status:	:thought_balloon: Hardware acquired / awaiting prioritization
+- Status:	 :thought_balloon: Hardware acquired / awaiting prioritization
 
 ### RPN Calculator ###
 
 (/rpn-calculator) -- A Reverse Polish Notation calculator that is both imminently practical and amusingly anachronistic.  Utilizes math libraries from CERN and offers extreme modularity of keyboard inputs, display options and API integration.  Combines the most-loved features of my many calculators and omits the things I dislike.
 
-- Status:	:thought_balloon: Scoping / awaiting prerequisites
+- Status:	 :thought_balloon: Scoping / awaiting prerequisites
 
 ### TEC Controller ###
 
 (/tec-controller) -- Hardware and software to drive thermoelectric (Peltier) devices to control temperature in a test chamber using PID loops.
 
-- Status:	:thought_balloon: Scoping
+- Status:	 :thought_balloon: Scoping
 
 ### Telephone Ring Generator ###
 
 (/ring-generator) -- A circuit to ring a classic Western Electric telephone bell from a low voltage lithium battery.  A prerequisite to turn a rotary dial phone into a Bluetooth terminal.
 
-- Status:	:thought_balloon: Scoping
+- Status:	 :thought_balloon: Scoping
 
 ### Visual Parts Database ###
 
 (/visual-database) -- A web-based interactive lookup tool for finding information about parts on an assembly drawings.
 
-- Status:	:thought_balloon: Data gathered / awaiting prioritization
+- Status:	 :thought_balloon: Data gathered / awaiting prioritization
 
 ### YIG Oscillator Driver ###
 
 (/yig-driver) -- Experimental circuits to learn fine control of Advantek and Hewlett Packard YIG oscillators.
 
-- Status:	:thought_balloon: Scoping
+- Status:	 :thought_balloon: Scoping
