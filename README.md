@@ -1,6 +1,6 @@
 # A Brief Overview of Projects In The CodeSchnitzel Lab #
 
-Updated 4/15/2026
+Updated 4/20/2026
 
 
 [toc]
@@ -207,7 +207,7 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 
 ### Discerning Camera ###
 
-(/insightful-observer) -- An edge AI camera that observes everything but only reports what is significant.
+(/insightful-observer) -- An edge AI camera that observes everything but only reports what is significant.  May include optional mesh networking for wide area monitoring and optional image analysis server to offload analysis from edge cameras.
 
 - Status:	 :construction: Hardware acquired / feasibility study complete / awaiting prioritization
 
@@ -237,7 +237,7 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 
 ### Laboratory DC UPS ###
 
-(/dc-ups) -- A high efficiency intelligent lithium batter based UPS for powering lab equipment that runs on DC power.
+(/dc-ups) -- A high efficiency intelligent lithium battery based UPS for powering lab equipment that runs on DC power.
 
 - Status:	 :thought_balloon: Scoping
 
@@ -251,13 +251,13 @@ Useful for estimating terrestrial radio coverage.  Inspired by tools published b
 
 ### Mains Monitor ###
 
-(/mains-monitor) -- Lab instrument for characterizing power line frequency drift, voltage consistency and long term accuracy.
+(/mains-monitor) -- Lab instrument for characterizing power line frequency drift, voltage consistency and long term accuracy.  Uses a zero-crossing detector to measure against the Atomic Director output reference.
 
 - Status:	 :thought_balloon: Scoping
 
 ### OCXO Calibrator ###
 
-(/ocxo-cal) -- An automated lab instrument for trimming free-running OCXO oscillators to serve as portable time standards for independent data acquisition devices that need to take time-coherent measurements.
+(/ocxo-cal) -- An automated lab instrument for trimming free-running OCXO oscillators to serve as portable time standards for independent data acquisition devices that need to take time-coherent measurements.  Will use Atomic Director as the calibration standard.
 
 - Status:	 :thought_balloon: Scoping
 
