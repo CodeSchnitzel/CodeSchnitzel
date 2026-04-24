@@ -6,7 +6,7 @@ Updated 4/24/2026
 
 ------
 
-## Active Projects
+## Active Projects (7 projects with 21 sub-projects)
 
 ### <u>AI Lab Automation Suite (aka JARVIS)</u>
 
@@ -23,29 +23,6 @@ For its first test to ensure it could communicate with instruments, it self-disc
     | 4. Safety & orchestration          | :thought_balloon: Planning                                   |
     | 5. Skills building & data analysis | :thought_balloon: / :construction: Planning (AI upgrades underway) |
     | 6. Advanced procedures             | :thought_balloon: Planning                                   |
-
-#### *SPaaS (Speech As A Service)*
-
-JARVIS and other machines around my network now share centralized on-premise GPU-based Text-To-Speech and Speech-To-Text.  Heavy lifting happens on my WOPR machine (local AI engine) and audio is pipelined to and from a Windows desktop machine via a compiled service because that's where the best audio hardware is.  Any machine that can call an API or connect to a net socket can use the service.  JARVIS has his own unique voice and other devices around the lab have distinct voices as well.
-
-Also implemented VPN to allow secure and seamless conversational access from anywhere via iPhone, iPad, laptop, etc.
-
-- Status:
-  - :heavy_check_mark: Done!  Up and running
-  - :construction: Experimenting with optimizations.  Soon to have a better GPU.
-- Keeping this listed under "Active Projects" because it's a sub-project to JARVIS.
-
-### [Astro Discovery / Star Finder](#https://github.com/CodeSchnitzel/astro-discovery)
-
-(/astro-discovery) -- Started as a portable VM for running plate solver software in the field to analyze an astrophotography photos and determine, based on stored star maps, what the point of aim, orientation and field of view are.  The project morphed into a Raspberry Pi Zero 2W appliance that can optionally connect directly to the camera and present a user interface through a WiFi connected phone.  It calculates point-of-aim error magnitude and direction to speed up accurate aiming.
-
-From concept to working device in about 3 hours.
-
-This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project, but it is currently autonomous and presents its UI via a web browser on a cell phone or tablet.
-
-- Status:	 :heavy_check_mark: Complete / awaiting field testing if we ever have clear skies again
-    - <a href="images/astro-discovery-device_1080.jpg" target="_blank">Astro Discovery device (Raspberry Pi Zero)</a>
-    - <a href="images/astro-discovery-ui.jpeg" target="_blank">Astro Discovery user interface</a>
 
 ### <u>Atomic Director</u>
 
@@ -138,7 +115,19 @@ A high precision, high accuracy logger that monitors multiple platinum wire temp
 ------
 
 
-## Completed Projects ## 
+## Completed Projects (7 projects) ## 
+
+### [Astro Discovery / Star Finder](#https://github.com/CodeSchnitzel/astro-discovery)
+
+(/astro-discovery) -- Started as a portable VM for running plate solver software in the field to analyze an astrophotography photos and determine, based on stored star maps, what the point of aim, orientation and field of view are.  The project morphed into a Raspberry Pi Zero 2W appliance that can optionally connect directly to the camera and present a user interface through a WiFi connected phone.  It calculates point-of-aim error magnitude and direction to speed up accurate aiming.
+
+From concept to working device in about 3 hours.
+
+This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project, but it is currently autonomous and presents its UI via a web browser on a cell phone or tablet.
+
+- Status:	 :heavy_check_mark: Complete / awaiting field testing if we ever have clear skies again
+    - <a href="images/astro-discovery-device_1080.jpg" target="_blank">Astro Discovery device (Raspberry Pi Zero)</a>
+    - <a href="images/astro-discovery-ui.jpeg" target="_blank">Astro Discovery user interface</a>
 
 ### <u>Chrono Tester</u>
 
@@ -158,7 +147,17 @@ A high precision, high accuracy logger that monitors multiple platinum wire temp
 
 - Status:	 :heavy_check_mark: Complete
 
-### Visual Parts Database ###
+### <u>SPaaS (Speech As A Service)</u>
+
+JARVIS and other machines around my network now share centralized on-premise GPU-based Text-To-Speech and Speech-To-Text.  Heavy lifting happens on my WOPR machine (local AI engine) and audio is pipelined to and from a Windows desktop machine via a compiled service because that's where the best audio hardware is.  Any machine that can call an API or connect to a net socket can use the service.  JARVIS has his own unique voice and other devices around the lab have distinct voices as well.
+
+Also implemented VPN to allow secure and seamless conversational access from anywhere via iPhone, iPad, laptop, etc.
+
+- Status:
+  - :heavy_check_mark: Done!  Up and running
+  - :construction: Experimenting with optimizations.  Soon to have a better GPU.
+
+### <u>Visual Parts Database</u>
 
 (/visual-database) -- A web-based interactive lookup tool for finding information about parts on assembly drawings.  In its current form, it is a very rich and capable tool to traverse a large and complex radio schematic (Hallicrafters SX42) for restoration.
 
@@ -176,81 +175,83 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 
 ------
 
-## Queued Projects ## 
+## Queued Projects (23 projects) ## 
 
-### 3-Channel Optical Chronograph ###
+### <u>3-Channel Optical Chronograph</u>
 
 (/chrono-3chan) -- A modernized version of an Oehler model 35P chronograph with wireless feature for better data management and analysis.
 
 - Status:	 :thought_balloon: Scoping
 
-### 7-Segment LED Display ###
+### <u>7-Segment LED Display</u>
 
 (/displays/led7seg-driver) -- A simple, expandable multi-line LED display.  Complements the [RPN Calculator](#RPN Calculator) project.
 
 - Status:	 :construction: Feasibility tested
 
-### Acoustic Laser
+### <u>Acoustic Laser</u>
 
 (/acoustic-laser) -- OK, not a laser, but a collection of experimental acoustic beamforming experiments.  I'm mostly interested in adaptive sound delivery but also curious about microphone matrix arrays.
 
 - Status:	 :thought_balloon: Scoping
 
-### Acoustic Trilaterator ###
+### <u>Acoustic Trilaterator</u>
 
 (/acoustic-trilaterator) -- Microphone array for pinpointing bullet location on a target by signal analysis of the shockwave's acoustic signature and time difference of arrival.
 
 - Status:	 :thought_balloon: Scoping
 
-### Barbara Mandrel ###
+### <u>Barbara Mandrel</u>
 
 (/mandrel-4humanity) -- A 3D design and engineering project to save humanity and all its dependencies.  (NOT Barbara Mandrell, who is a 3D person)
 
 - Status:	 :thought_balloon: Conceptual
 
-### Bobcat 225G Engine Idler ###
+### <u>Bobcat 225G Engine Idler</u>
 
 (/bobcat-idler) -- A modern replacement for an automatic idle-down circuit for the engine on Miller Bobcat 225G welder/generators.  This is to replace a part that is now unobtanium.
 
 - Status:	 :thought_balloon: Experimental / awaiting redesign
 
-### Discerning Camera ###
+### <u>Discerning Camera</u>
 
 (/insightful-observer) -- An edge AI camera that observes everything but only reports what is significant.  May include optional mesh networking for wide area monitoring and optional image analysis server to offload analysis from edge cameras.
 
 - Status:	 :construction: Hardware acquired / feasibility study complete / awaiting prioritization
 
-### EZ Clock ###
+### <u>EZ Clock</u>
 
 (/easy-clock) -- Inexpensive, hassle-free clocks that can be placed anywhere within range of a WiFi network with NTP access.  Modular for a choice of displays including round TFT's that show traditional clock/watch faces, 7-segment displays, Burroughs Panaplex displays and even speech synthesis.  Benefits from the [7-Segment LED Display](#7-Segment LED Display) project and [Panaplex Plasma Display Driver](#Panaplex Plasma Display Driver) project.
 
 - Status:	 :thought_balloon: Awaiting prioritization (prototyping / POC is done)
 
-### Gauss B Gone ###
+### <u>Gauss B Gone</u>
 
 (/degauss-parts) A device that properly degausses small parts according to scientific principles rather than how cheaply can it be made.
 
 - Status:	 :thought_balloon: Awaiting prioritization
 
-### Keithley SCAN2000 Card Clone ###
+### <u>Keithley SCAN2000 Card Clone</u>
 
 (/external-repos/scan2k-clone) -- This is an implementation of a third-party project by "[cozdas](https://github.com/cozdas/CozScan2020)" to replicate a Keithley SCAN2000 20-channel data acquisition scanner but with SSR's instead of mechanical relays.
 
 - Status:	 :thought_balloon: Awaiting prioritization
 
-### Laboratory Clock Generator ###
+### <u>Laboratory Clock Generator</u>
 
 (/clock-gen) -- A lab device for producing pulse trains over a wide range of user defined frequencies, based on an Si5354 frequency synthesizer chip.  A central feature is a friendly user interface and extended feature set that are substantially different than other Si5354 projects.
 
+This will have an internal temperature-compensated crystal oscillator (with an auto calibration procedure that will benefit from the "OCXO Calibrator" project), plus the ability to run with an external frequency reference ("Atomic Director").
+
 - Status:	 :construction: Awaiting version 2 reengineering
 
-### Laboratory DC UPS ###
+### <u>Laboratory DC UPS</u>
 
 (/dc-ups) -- A high efficiency intelligent lithium battery based UPS for powering lab equipment that runs on DC power.
 
 - Status:	 :thought_balloon: Scoping
 
-### Line Of Sight Calculator ###
+### <u>Terrain Line-Of-Sight Calculator</u>
 
 (/splat-los) -- A tool for calculating line of sight on the surface of the Earth from any altitude based on radar terrain elevation data collected by Space Shuttle Endeavor, STS-99 on the Shuttle Radar Topography Mission (SRTM) in February 2000.
 
@@ -258,61 +259,61 @@ Useful for estimating terrestrial radio coverage.  Inspired by tools published b
 
 - Status:	 :thought_balloon: Data gathered / awaiting prioritization
 
-### Mains Monitor ###
+### <u>Mains Monitor</u>
 
 (/mains-monitor) -- Lab instrument for characterizing power line frequency drift, voltage consistency and long term accuracy.  Uses a zero-crossing detector to measure against the Atomic Director output reference.
 
 - Status:	 :thought_balloon: Scoping
 
-### OCXO Calibrator ###
+### <u>OCXO Calibrator</u>
 
 (/ocxo-cal) -- An automated lab instrument for trimming free-running OCXO oscillators to serve as portable time standards for independent data acquisition devices that need to take time-coherent measurements.  Will use Atomic Director as the calibration standard.
 
 - Status:	 :thought_balloon: Scoping
 
-### Panaplex Plasma Display Driver ###
+### <u>Panaplex Plasma Display Driver</u>
 
 (/displays/panaplex-driver) -- A modernized circuit to drive early 1970's Burroughs Panaplex displays.  To be used in conjunction with other projects such as [RPN Calculator](#RPN Calculator) and [EZ Clock](#EZ Clock).
 
 - Status:	 :thought_balloon: Data gathering
 
-### PC Cooler Override
+### <u>PC Cooler Override</u>
 
 (/cooler-override) -- Interposer device to allow a PC motherboard to control PC fans as normal, but to intervene and increase RPM when motherboard controls fail to manage thermal conditions.
 
 - Status:	 :thought_balloon: Requirements gathering
 
-### Quantum Keygen ###
+### <u>Quantum Keygen</u>
 
 (/quantum-keygen) -- A high entropy cryptography key generator based on radioactive decay and other sources of true entropy.
 
 - Status:	 :thought_balloon: Feasibility study
 
-### Retro Crypto ###
+### <u>Retro Crypto</u>
 
 (/retry-crypto) -- An anachronistic cryptography device based on a massive array of obsolete Intel 8294A 56-bit DES encryption chips.
 
 - Status:	 :thought_balloon: Hardware acquired / awaiting prioritization
 
-### RPN Calculator ###
+### <u>RPN Calculator</u>
 
 (/rpn-calculator) -- A Reverse Polish Notation calculator that is both imminently practical and amusingly anachronistic.  Utilizes math libraries from CERN and offers extreme modularity of keyboard inputs, display options and API integration.  Combines the most-loved features of my many calculators and omits the things I dislike.
 
 - Status:	 :thought_balloon: Scoping / awaiting prerequisites
 
-### TEC Controller ###
+### <u>TEC Controller</u>
 
 (/tec-controller) -- Hardware and software to drive thermoelectric (Peltier) devices to control temperature in a test chamber using PID loops.
 
 - Status:	 :thought_balloon: Scoping
 
-### Telephone Ring Generator ###
+### <u>Telephone Ring Generator</u>
 
 (/ring-generator) -- A circuit to ring a classic Western Electric telephone bell from a low voltage lithium battery.  A prerequisite to turn a rotary dial phone into a Bluetooth terminal.
 
 - Status:	 :thought_balloon: Scoping
 
-### YIG Oscillator Driver ###
+### <u>YIG Oscillator Driver</u>
 
 (/yig-driver) -- Experimental circuits to learn fine control of Advantek and Hewlett Packard YIG oscillators.
 
