@@ -1,7 +1,6 @@
 # A Brief Overview of Projects In The CodeSchnitzel Lab #
 
-Updated 4/20/2026
-
+Updated 4/24/2026
 
 [toc]
 
@@ -44,7 +43,7 @@ From concept to working device in about 3 hours.
 
 This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project, but it is currently autonomous and presents its UI via a web browser on a cell phone or tablet.
 
-- Status:	:heavy_check_mark: Complete / awaiting field testing if we ever have clear skies again
+- Status:	 :heavy_check_mark: Complete / awaiting field testing if we ever have clear skies again
     - <a href="images/astro-discovery-device_1080.jpg" target="_blank">Astro Discovery device (Raspberry Pi Zero)</a>
     - <a href="images/astro-discovery-ui.jpeg" target="_blank">Astro Discovery user interface</a>
 
@@ -85,7 +84,7 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
 
 (/mellanox-cooler) -- A hardware enhancement for Mellanox MCX4121 NIC cards to prevent them from self destructing due to their pathetically inadequate thermal design.
 
-- Status:	:construction: Design complete / Implementation phase
+- Status:	  :construction:  Design complete / Implementation phase
 
 ### <u>STAR TRKR</u>
 
@@ -110,7 +109,7 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
 
 (/star-trkr/star-finder) -- An integration of the [Astro Discovery](#Astro Discovery) project into [Star Brain](#Star Brain) to merge plate solving and eventually polar alignment into the overall platform control.  This will become a software integration with the main controller computer.
 
-#### *Tracker Muscle*
+#### *Tracker Muscle* (Right Ascension)
 
 (/star-trkr/trkr-muscle) -- A high precision linear actuator to control STAR TRKR's right ascension axis, matching the angular rotation of the Earth to keep camera equipment fixed on a single aimpoint.
 
@@ -156,6 +155,16 @@ A high precision, high accuracy logger that monitors multiple platinum wire temp
 ### <u>Voice Scribe</u>
 
 (/voice-scribe) -- Uses local AI to transcribe voice recorder files into text and then categorize them.  Transcription implemented very successfully on ~250 voice files.  Encountered GPU thermal issues that were resolved via software by taking fan control over from the GPU's driver.
+
+- Status:	 :heavy_check_mark: Complete
+
+### Visual Parts Database ###
+
+(/visual-database) -- A web-based interactive lookup tool for finding information about parts on assembly drawings.  In its current form, it is a very rich and capable tool to traverse a large and complex radio schematic (Hallicrafters SX42) for restoration.
+
+It lets me click on a component, see detailed specs, record notes & measurements about the original part as well as its replacement if needed.  It highlights what has been done and what needs to be done and integrates both voice recognition and speech synthesis (via SPaaS) to make the electronics restoration process exceptionally efficient.
+
+In the future, it will gain even more capabilities for a range of other use cases.
 
 - Status:	 :heavy_check_mark: Complete
 
@@ -302,12 +311,6 @@ Useful for estimating terrestrial radio coverage.  Inspired by tools published b
 (/ring-generator) -- A circuit to ring a classic Western Electric telephone bell from a low voltage lithium battery.  A prerequisite to turn a rotary dial phone into a Bluetooth terminal.
 
 - Status:	 :thought_balloon: Scoping
-
-### Visual Parts Database ###
-
-(/visual-database) -- A web-based interactive lookup tool for finding information about parts on an assembly drawings.
-
-- Status:	 :thought_balloon: Data gathered / awaiting prioritization
 
 ### YIG Oscillator Driver ###
 
