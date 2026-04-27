@@ -1,6 +1,6 @@
 # A Brief Overview of Projects In The CodeSchnitzel Lab #
 
-Updated 4/24/2026
+Updated 4/27/2026
 
 [toc]
 
@@ -15,14 +15,14 @@ Updated 4/24/2026
 For its first test to ensure it could communicate with instruments, it self-discovered a real problem with a power supply.  JARVIS brought this to my attention and worked through problem identification.   It turned out to be a faulty switch between test instruments.
 
 - Status:
-  - | Phase                              | Current Status                                               |
-    | ---------------------------------- | ------------------------------------------------------------ |
-    | 1. Foundational work               | :heavy_check_mark: Completed                                 |
-    | 2. Speech                          | :heavy_check_mark: Completed                                 |
-    | 3. Knowledge building              | :construction: In progress (Deep Knowledge Stockpile)        |
-    | 4. Safety & orchestration          | :thought_balloon: Planning                                   |
-    | 5. Skills building & data analysis | :thought_balloon: / :construction: Planning (AI upgrades underway) |
-    | 6. Advanced procedures             | :thought_balloon: Planning                                   |
+  - | Phase                                     | Current Status                                               |
+    | ----------------------------------------- | ------------------------------------------------------------ |
+    | 1. Foundational work with local AI engine | :heavy_check_mark: Completed                                 |
+    | 2. Speech services                        | :heavy_check_mark: Completed                                 |
+    | 3. Knowledge building                     | :construction: Nearly complete (Deep Knowledge Stockpile)    |
+    | 4. Safety & orchestration                 | :thought_balloon: Planning                                   |
+    | 5. Skills building & data analysis        | :thought_balloon: / :construction: Planning (AI upgrades underway) |
+    | 6. Advanced procedures                    | :thought_balloon: Planning                                   |
 
 ### <u>Atomic Director</u>
 
@@ -53,8 +53,9 @@ For its first test to ensure it could communicate with instruments, it self-disc
      - SPeech As A Service
 - Services in development:
      - Deep Knowledge Stockpile (expanded from Andrej Karpathy's "LLM Wiki" idea)
+     - Vision services (planned as a part of the Insightful Observer project)
      - Internal security layering & monitoring
-
+     
 - Status:	Permanent / Ongoing
 
 ### <u>Mellanox NIC Active Cooler</u>
@@ -62,6 +63,11 @@ For its first test to ensure it could communicate with instruments, it self-disc
 (/mellanox-cooler) -- A hardware enhancement for Mellanox MCX4121 NIC cards to prevent them from self destructing due to their pathetically inadequate thermal design.
 
 - Status:	  :construction:  Design complete / Implementation phase
+
+### <u>Serene Sentinel</u>
+
+(/vision/serene-sentinel) -- A platform for small machine vision devices at the computing edge.  This platform directly serves several basic use cases, but also supports the more ambitious Insightful Observer project.
+- Status:	 :construction: Project charter complete. In architecture scoping & structuring
 
 ### <u>STAR TRKR</u>
 
@@ -78,7 +84,7 @@ For its first test to ensure it could communicate with instruments, it self-disc
   | Main controller computer   | :construction: In prototyping                                |
   | Software development       | :thought_balloon: Scoping                                    |
   | Camera platform            | :heavy_check_mark: Built                                     |
-  | Azimuth & elevation stages | :heavy_check_mark: Mechanics built<br />:heavy_check_mark: Elevation is motorized<br />:thought_balloon: Need azimuth motor + controller |
+  | Azimuth & elevation stages | :heavy_check_mark: Mechanics built<br />:heavy_check_mark: Elevation is motorized<br />:thought_balloon: Need to build azimuth motor adapter + controller circuits |
   | Polar alignment fixture    | :construction: In mechanical design                          |
   
 
@@ -175,7 +181,7 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 
 ------
 
-## Queued Projects (23 projects) ## 
+## Queued Projects (24 projects) ## 
 
 ### <u>3-Channel Optical Chronograph</u>
 
@@ -213,11 +219,11 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 
 - Status:	 :thought_balloon: Experimental / awaiting redesign
 
-### <u>Discerning Camera</u>
+### <u>Insightful Observer</u>
 
-(/insightful-observer) -- An edge AI camera that observes everything but only reports what is significant.  May include optional mesh networking for wide area monitoring and optional image analysis server to offload analysis from edge cameras.
+(/vision/insightful-observer) -- A server-side observation system.  Leveraging the Serene Sentinel platform, camera devices report captures and metadata to an ingest endpoint; the server stores them, classifies them, analyzes content and surfaces significant events through dashboards and alerts. Hosts two server-bound products: *door-cam* (single-cam target classifier) and *field-mesh* (battery-powered mesh group with on-device pre-filtering).
 
-- Status:	 :construction: Hardware acquired / feasibility study complete / awaiting prioritization
+- Status:	 :thought_balloon: Charter restructured around server-side scope; awaiting lab infrastructure maturation and *Serene Sentinel* platform stabilization before product work begins
 
 ### <u>EZ Clock</u>
 
@@ -300,6 +306,12 @@ Useful for estimating terrestrial radio coverage.  Inspired by tools published b
 (/rpn-calculator) -- A Reverse Polish Notation calculator that is both imminently practical and amusingly anachronistic.  Utilizes math libraries from CERN and offers extreme modularity of keyboard inputs, display options and API integration.  Combines the most-loved features of my many calculators and omits the things I dislike.
 
 - Status:	 :thought_balloon: Scoping / awaiting prerequisites
+
+### <u>Silent Sentinel</u>
+
+(/vision/silent-sentinel) -- An ESP32-CAM firmware platform plus a family of self-contained, serverless camera products built on it. Hosts two firmware-only products: *trailer-cam* (magnetic-/suction-mounted real-time video to phone, for around-the-corner vision assistance like trailer rear views and gooseneck hitch alignment) and *game-cam* (outdoor microSD capture with on-device discrimination). The platform layer (camera core, transports, triggers, sinks) is library-shaped from day one and is also consumed by sister project *Discerning Camera* as a PlatformIO library for the firmware halves of its server-bound products.
+
+- Status:	 :thought_balloon: Scaffolded / charter drafted / no firmware written yet; *trailer-cam* is the pilot target
 
 ### <u>TEC Controller</u>
 
