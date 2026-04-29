@@ -1,46 +1,50 @@
 # A Brief Overview of Projects In The CodeSchnitzel Lab #
 
-Updated 4/27/2026
+Updated 4/28/2026
 
 [toc]
 
 ------
 
-## Active Projects (7 projects with 21 sub-projects)
+## Active Projects (8 projects with 21 sub-projects)
 
 ### <u>AI Lab Automation Suite (aka JARVIS)</u>
 
 (/lab-automation) -- An AI driven laboratory instrument test orchestration suite.  JARVIS constructs and administers complex test and experimental procedures based on natural language requests.  It considers the capabilities & limitations of lab instrumentation, follows safety guidelines and gathers & analyzes data.  JARVIS combines local AI with cloud-based AI.
 
 For its first test to ensure it could communicate with instruments, it self-discovered a real problem with a power supply.  JARVIS brought this to my attention and worked through problem identification.   It turned out to be a faulty switch between test instruments.
-
 - Status:
-  - | Phase                                     | Current Status                                               |
-    | ----------------------------------------- | ------------------------------------------------------------ |
-    | 1. Foundational work with local AI engine | :heavy_check_mark: Completed                                 |
-    | 2. Speech services                        | :heavy_check_mark: Completed                                 |
-    | 3. Knowledge building                     | :construction: Nearly complete (Deep Knowledge Stockpile)    |
-    | 4. Safety & orchestration                 | :thought_balloon: Planning                                   |
-    | 5. Skills building & data analysis        | :thought_balloon: / :construction: Planning (AI upgrades underway) |
-    | 6. Advanced procedures                    | :thought_balloon: Planning                                   |
+  | Phase                                            | Current Status                                               |
+  | ------------------------------------------------ | ------------------------------------------------------------ |
+  | 1. Foundational work with local AI engine        | :heavy_check_mark: Completed                                 |
+  | 2. Speech services                               | :heavy_check_mark: Completed                                 |
+  | 3. Knowledge building (Deep Knowledge Stockpile) | :heavy_check_mark: Completed (but will grow forever)         |
+  | 4. Safety & orchestration                        | :thought_balloon: Planning                                   |
+  | 5. Skills building & data analysis               | :thought_balloon: / :construction: Planning (AI upgrades underway) |
+  | 6. Advanced procedures                           | :thought_balloon: Planning                                   |
 
 ### <u>Atomic Director</u>
 
 (/atomic-director) -- A stack of custom and commercial hardware and software for managing a stack of high precision time and GNSS-disciplined frequency standards.
-
 - Status:
   - :heavy_check_mark: Equipment rack built
-  - :construction: Controller computer, touchscreen & rack unit built; now converting from 2D to 3D CAD for continuing development
-  	- <a href="images/atomic-director-development_1080.JPG" target="_blank">Atomic Director rack unit photo</a>
+  - :heavy_check_mark: Signal distributor rack unit built
+  - :heavy_check_mark: Controller computer with touchscreen built
+  	- Photo:  <a href="images/atomic-director-development_1080.JPG" target="_blank">Atomic Director rack unit</a>
   - :construction: Protocol Translator designed, firmware is unit-tested -- awaiting in-circuit testing
+  - :construction: Controller software architecture is mapped out -- awaiting Comms hardware for development
   - :construction: Comms system in engineering stage; PCB designed, prepping for production
-    - <a href="images/KB5EO-Atomic-Director-comms-subsystem-PCB-Render-Rev-A-Front.png" target="_blank">Comms circuit board render (front view)</a>
-    - <a href="images/KB5EO-Atomic-Director-comms-subsystem-PCB Render-Rev-A-Back.png" target="_blank">Comms circuit board render (back view)</a>
+    - 3D Rendering:  <a href="images/KB5EO-Atomic-Director-comms-subsystem-PCB-Render-Rev-A-Front.png" target="_blank">Comms circuit board render (front view)</a>
+    - 3D Rendering:  <a href="images/KB5EO-Atomic-Director-comms-subsystem-PCB Render-Rev-A-Back.png" target="_blank">Comms circuit board render (back view)</a>
   - :thought_balloon: Switching & Signals systems in scoping
   - :thought_balloon: Power Control & Monitoring in scoping
 
 ### <u>Infrastructure Build Out Project</u>
 (/infrastructure) -- This is an ever-evolving project to build network services, VM's, LXC containers and physical devices to facilitate all development & lab activities.
+- Services in development:
+     - Deep Knowledge Stockpile (expanded from Andrej Karpathy's "LLM Wiki" idea)
+     - Vision services (planned as a part of the Insightful Observer project)
+     - Internal security layering & monitoring
 - Services deployed:
      - Upgraded, simplified & hardened firewall
      - Internal reverse proxy & certificate authority
@@ -51,22 +55,16 @@ For its first test to ensure it could communicate with instruments, it self-disc
      - Artificial intelligence core (Ollama, Jarvis, AI tool kits, etc.)
      - File sync (SyncThing)
      - SPeech As A Service
-- Services in development:
-     - Deep Knowledge Stockpile (expanded from Andrej Karpathy's "LLM Wiki" idea)
-     - Vision services (planned as a part of the Insightful Observer project)
-     - Internal security layering & monitoring
-     
 - Status:	Permanent / Ongoing
 
 ### <u>Mellanox NIC Active Cooler</u>
 
 (/mellanox-cooler) -- A hardware enhancement for Mellanox MCX4121 NIC cards to prevent them from self destructing due to their pathetically inadequate thermal design.
-
 - Status:	  :construction:  Design complete / Implementation phase
 
 ### <u>Serene Sentinel</u>
 
-(/vision/serene-sentinel) -- A platform for small machine vision devices at the computing edge.  This platform directly serves several basic use cases, but also supports the more ambitious Insightful Observer project.
+(/vision/serene-sentinel) -- A platform for small machine vision devices at the computing edge.  This platform directly serves several basic use cases, but also supports the more ambitious [Insightful Observer](#Insightful Observer) project.
 - Status:	 :construction: Project charter complete. In architecture scoping & structuring
 
 ### <u>STAR TRKR</u>
@@ -76,7 +74,6 @@ For its first test to ensure it could communicate with instruments, it self-disc
 #### *Star Brain*
 
 (/star-trkr/star-brain)  -- The computer and software that control STAR TRKR and interface with various hardware components.
-
 - Status:
   
 	| Subsection                 | Status                                                       |
@@ -86,7 +83,6 @@ For its first test to ensure it could communicate with instruments, it self-disc
   | Camera platform            | :heavy_check_mark: Built                                     |
   | Azimuth & elevation stages | :heavy_check_mark: Mechanics built<br />:heavy_check_mark: Elevation is motorized<br />:thought_balloon: Need to build azimuth motor adapter + controller circuits |
   | Polar alignment fixture    | :construction: In mechanical design                          |
-  
 
 #### *Star Finder*
 
@@ -95,18 +91,16 @@ For its first test to ensure it could communicate with instruments, it self-disc
 #### *Tracker Muscle* (Right Ascension)
 
 (/star-trkr/trkr-muscle) -- A high precision linear actuator to control STAR TRKR's right ascension axis, matching the angular rotation of the Earth to keep camera equipment fixed on a single aimpoint.
-
 - Status:
   - :heavy_check_mark: Kinematics built.
   - :heavy_check_mark: Calibration/alignment fixture built.
   - :construction: Controller prototyped, awaiting round-2 engineering and software integration.
   - :heavy_check_mark: Was used successfully for the April 8, 2024 total solar eclipse using prototype controller.
-  	- <a href="images/IMG_0218_1080.JPG" target="_blank">STAR TRKR, April 8 2024 Total Eclipse</a>
+  	- Photo:  <a href="images/IMG_0218_1080.JPG" target="_blank">STAR TRKR, April 8 2024 Total Eclipse</a>
 
 ### <u>ThermaLog</u>
 
 A high precision, high accuracy logger that monitors multiple platinum wire temperature sensors as well as ambient environment conditions.  ThermaLog emphasizes oversampling and precisely time-correlated measurements for both real time and offline analysis.
-
 - Status:
   - :heavy_check_mark: Fully prototyped & tested
   - :construction: Pre-production validation (not public yet)
@@ -114,7 +108,6 @@ A high precision, high accuracy logger that monitors multiple platinum wire temp
 ### <u>VetteDirectional</u>
 
 (/VetteDirectional) -- Implementation of a circuit devised by George to permit usage of LED marker and turn signal bulbs in old GM vehicles.
-
 - Status:	 :construction: Pre-production validation
 
 
@@ -132,8 +125,8 @@ From concept to working device in about 3 hours.
 This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project, but it is currently autonomous and presents its UI via a web browser on a cell phone or tablet.
 
 - Status:	 :heavy_check_mark: Complete / awaiting field testing if we ever have clear skies again
-    - <a href="images/astro-discovery-device_1080.jpg" target="_blank">Astro Discovery device (Raspberry Pi Zero)</a>
-    - <a href="images/astro-discovery-ui.jpeg" target="_blank">Astro Discovery user interface</a>
+    - Photo:  <a href="images/astro-discovery-device_1080.jpg" target="_blank">Astro Discovery device (Raspberry Pi Zero)</a>
+    - Screen shot:  <a href="images/astro-discovery-ui.jpeg" target="_blank">Astro Discovery user interface</a>
 
 ### <u>Chrono Tester</u>
 
@@ -155,7 +148,7 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
 
 ### <u>SPaaS (Speech As A Service)</u>
 
-JARVIS and other machines around my network now share centralized on-premise GPU-based Text-To-Speech and Speech-To-Text.  Heavy lifting happens on my WOPR machine (local AI engine) and audio is pipelined to and from a Windows desktop machine via a compiled service because that's where the best audio hardware is.  Any machine that can call an API or connect to a net socket can use the service.  JARVIS has his own unique voice and other devices around the lab have distinct voices as well.
+JARVIS and other machines around my network now share centralized on-premise GPU-based Text-To-Speech and Speech-To-Text.  Heavy lifting happens on my [WOPR](#WOPR Local AI) machine (local AI engine) and audio is pipelined to and from a Windows desktop machine via a compiled service because that's where the best audio hardware is.  Any machine that can call an API or connect to a net socket can use the service.  JARVIS has his own unique voice and other devices around the lab have distinct voices as well.
 
 Also implemented VPN to allow secure and seamless conversational access from anywhere via iPhone, iPad, laptop, etc.
 
@@ -191,7 +184,7 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 
 ### <u>7-Segment LED Display</u>
 
-(/displays/led7seg-driver) -- A simple, expandable multi-line LED display.  Complements the [RPN Calculator](#RPN Calculator) project.
+(/displays/led7seg-driver) -- A simple, expandable multi-line LED display.  Complements the [RPN Calculator](#RPN Calculator) and [EZ Clock](#EZ Clock) projects.
 
 - Status:	 :construction: Feasibility tested
 
@@ -223,7 +216,7 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 
 (/vision/insightful-observer) -- A server-side observation system.  Leveraging the Serene Sentinel platform, camera devices report captures and metadata to an ingest endpoint; the server stores them, classifies them, analyzes content and surfaces significant events through dashboards and alerts. Hosts two server-bound products: *door-cam* (single-cam target classifier) and *field-mesh* (battery-powered mesh group with on-device pre-filtering).
 
-- Status:	 :thought_balloon: Charter restructured around server-side scope; awaiting lab infrastructure maturation and *Serene Sentinel* platform stabilization before product work begins
+- Status:	 :thought_balloon: Charter restructured around server-side scope; awaiting lab infrastructure maturation and [*Serene Sentinel*](#Serene Sentinel) platform stabilization before product work begins
 
 ### <u>EZ Clock</u>
 
@@ -306,12 +299,6 @@ Useful for estimating terrestrial radio coverage.  Inspired by tools published b
 (/rpn-calculator) -- A Reverse Polish Notation calculator that is both imminently practical and amusingly anachronistic.  Utilizes math libraries from CERN and offers extreme modularity of keyboard inputs, display options and API integration.  Combines the most-loved features of my many calculators and omits the things I dislike.
 
 - Status:	 :thought_balloon: Scoping / awaiting prerequisites
-
-### <u>Silent Sentinel</u>
-
-(/vision/silent-sentinel) -- An ESP32-CAM firmware platform plus a family of self-contained, serverless camera products built on it. Hosts two firmware-only products: *trailer-cam* (magnetic-/suction-mounted real-time video to phone, for around-the-corner vision assistance like trailer rear views and gooseneck hitch alignment) and *game-cam* (outdoor microSD capture with on-device discrimination). The platform layer (camera core, transports, triggers, sinks) is library-shaped from day one and is also consumed by sister project *Discerning Camera* as a PlatformIO library for the firmware halves of its server-bound products.
-
-- Status:	 :thought_balloon: Scaffolded / charter drafted / no firmware written yet; *trailer-cam* is the pilot target
 
 ### <u>TEC Controller</u>
 
