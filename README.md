@@ -6,7 +6,7 @@ Updated 4/28/2026
 
 ------
 
-## Active Projects (8 projects with 21 sub-projects)
+## Active Projects (8 projects with 22 sub-projects)
 
 ### <u>AI Lab Automation Suite (aka JARVIS)</u>
 
@@ -47,7 +47,7 @@ For its first test to ensure it could communicate with instruments, it self-disc
      - Internal security layering & monitoring
 - Services deployed:
      - Upgraded, simplified & hardened firewall
-     - Internal reverse proxy & certificate authority
+     - Internal reverse proxy, VPN & certificate authority
      - Ad blocking (Pi-Hole)
      - Wide area notifications
      - Data management stack (SQL Server, Prometheus, InfluxDB)
@@ -153,8 +153,7 @@ JARVIS and other machines around my network now share centralized on-premise GPU
 Also implemented VPN to allow secure and seamless conversational access from anywhere via iPhone, iPad, laptop, etc.
 
 - Status:
-  - :heavy_check_mark: Done!  Up and running
-  - :construction: Experimenting with optimizations.  Soon to have a better GPU.
+  - :heavy_check_mark: Complete
 
 ### <u>Visual Parts Database</u>
 
@@ -240,7 +239,7 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 
 (/clock-gen) -- A lab device for producing pulse trains over a wide range of user defined frequencies, based on an Si5354 frequency synthesizer chip.  A central feature is a friendly user interface and extended feature set that are substantially different than other Si5354 projects.
 
-This will have an internal temperature-compensated crystal oscillator (with an auto calibration procedure that will benefit from the "OCXO Calibrator" project), plus the ability to run with an external frequency reference ("Atomic Director").
+This will have an internal temperature-compensated crystal oscillator (with an auto calibration procedure that will benefit from the "OCXO Calibrator" project), plus the ability to run with an external frequency reference ("[Atomic Director](#Atomic Director)").
 
 - Status:	 :construction: Awaiting version 2 reengineering
 
@@ -316,4 +315,4 @@ Useful for estimating terrestrial radio coverage.  Inspired by tools published b
 
 (/yig-driver) -- Experimental circuits to learn fine control of Advantek and Hewlett Packard YIG oscillators.
 
-- Status:	 :thought_balloon: Scoping
+- Status:	 :thought_balloon: Scoping>
