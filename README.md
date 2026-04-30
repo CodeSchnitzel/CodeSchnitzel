@@ -1,6 +1,6 @@
 # A Brief Overview of Projects In The CodeSchnitzel Lab #
 
-Updated 4/28/2026
+Updated 4/30/2026
 
 [toc]
 
@@ -25,15 +25,15 @@ For its first test to ensure it could communicate with instruments, it self-disc
 
 ### <u>Atomic Director</u>
 
-(/atomic-director) -- A stack of custom and commercial hardware and software for managing a stack of high precision time and GNSS-disciplined frequency standards.
+(/atomic-director) -- A rubidium atomic clock consisting of both custom & commercial hardware with custom software for managing a stack of high precision disciplined time & frequency standards.
 - Status:
   - :heavy_check_mark: Equipment rack built
-  - :heavy_check_mark: Signal distributor rack unit built
   - :heavy_check_mark: Controller computer with touchscreen built
-  	- Photo:  <a href="images/atomic-director-development_1080.JPG" target="_blank">Atomic Director rack unit</a>
+    - Photo:  <a href="images/atomic-director-development_1080.JPG" target="_blank">Atomic Director rack unit</a>
+  - :heavy_check_mark: Signal distributor rack unit built
   - :construction: Protocol Translator designed, firmware is unit-tested -- awaiting in-circuit testing
-  - :construction: Controller software architecture is mapped out -- awaiting Comms hardware for development
-  - :construction: Comms system in engineering stage; PCB designed, prepping for production
+  - :construction: Controller software architecture is mapped out -- awaiting Comms hardware to begin implementation
+  - :construction: Comms system in final engineering stage; PCB designed, prepping for production
     - 3D Rendering:  <a href="images/KB5EO-Atomic-Director-comms-subsystem-PCB-Render-Rev-A-Front.png" target="_blank">Comms circuit board render (front view)</a>
     - 3D Rendering:  <a href="images/KB5EO-Atomic-Director-comms-subsystem-PCB Render-Rev-A-Back.png" target="_blank">Comms circuit board render (back view)</a>
   - :thought_balloon: Switching & Signals systems in scoping
@@ -62,7 +62,7 @@ For its first test to ensure it could communicate with instruments, it self-disc
 (/mellanox-cooler) -- A hardware enhancement for Mellanox MCX4121 NIC cards to prevent them from self destructing due to their pathetically inadequate thermal design.
 - Status:	  :construction:  Design complete / Implementation phase
 
-### <u>Serene Sentinel</u>
+### <u>Serene Sentinel</u> Machine Vision Platform
 
 (/vision/serene-sentinel) -- A platform for small machine vision devices at the computing edge.  This platform directly serves several basic use cases, but also supports the more ambitious [Insightful Observer](#Insightful Observer) project.
 - Status:	 :construction: Project charter complete. In architecture scoping & structuring
@@ -88,13 +88,13 @@ For its first test to ensure it could communicate with instruments, it self-disc
 
 (/star-trkr/star-finder) -- An integration of the [Astro Discovery](#Astro Discovery) project into [Star Brain](#Star Brain) to merge plate solving and eventually polar alignment into the overall platform control.  This will become a software integration with the main controller computer.
 
-#### *Tracker Muscle* (Right Ascension)
+#### *Tracker Muscle* (Right Ascension Axis)
 
 (/star-trkr/trkr-muscle) -- A high precision linear actuator to control STAR TRKR's right ascension axis, matching the angular rotation of the Earth to keep camera equipment fixed on a single aimpoint.
 - Status:
-  - :heavy_check_mark: Kinematics built.
+  - :heavy_check_mark: Kinematics built (carbon fiber linear actuator with a ballscrew drive for micron precision).
   - :heavy_check_mark: Calibration/alignment fixture built.
-  - :construction: Controller prototyped, awaiting round-2 engineering and software integration.
+  - :construction: Motor drive controller prototyped, awaiting round-2 engineering and software integration.
   - :heavy_check_mark: Was used successfully for the April 8, 2024 total solar eclipse using prototype controller.
   	- Photo:  <a href="images/IMG_0218_1080.JPG" target="_blank">STAR TRKR, April 8 2024 Total Eclipse</a>
 
@@ -102,8 +102,8 @@ For its first test to ensure it could communicate with instruments, it self-disc
 
 A high precision, high accuracy logger that monitors multiple platinum wire temperature sensors as well as ambient environment conditions.  ThermaLog emphasizes oversampling and precisely time-correlated measurements for both real time and offline analysis.
 - Status:
-  - :heavy_check_mark: Fully prototyped & tested
-  - :construction: Pre-production validation (not public yet)
+  - :heavy_check_mark: Fully prototyped & tested -- prototype is in regular use in the lab
+  - :construction: Pre-production validation for a finished package (not public yet)
 
 ### <u>VetteDirectional</u>
 
@@ -146,28 +146,27 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
 
 - Status:	 :heavy_check_mark: Complete
 
-### <u>SPaaS (Speech As A Service)</u>
+### <u>SPaaS</u> (Speech As A Service)
 
 JARVIS and other machines around my network now share centralized on-premise GPU-based Text-To-Speech and Speech-To-Text.  Heavy lifting happens on my [WOPR](#WOPR Local AI) machine (local AI engine) and audio is pipelined to and from a Windows desktop machine via a compiled service because that's where the best audio hardware is.  Any machine that can call an API or connect to a net socket can use the service.  JARVIS has his own unique voice and other devices around the lab have distinct voices as well.
 
 Also implemented VPN to allow secure and seamless conversational access from anywhere via iPhone, iPad, laptop, etc.
 
-- Status:
-  - :heavy_check_mark: Complete
+- Status:	​ :heavy_check_mark: Complete
 
 ### <u>Visual Parts Database</u>
 
 (/visual-database) -- A web-based interactive lookup tool for finding information about parts on assembly drawings.  In its current form, it is a very rich and capable tool to traverse a large and complex radio schematic (Hallicrafters SX42) for restoration.
 
-It lets me click on a component, see detailed specs, record notes & measurements about the original part as well as its replacement if needed.  It highlights what has been done and what needs to be done and integrates both voice recognition and speech synthesis (via SPaaS) to make the electronics restoration process exceptionally efficient.
+It lets me click on a component, see detailed specs, record notes & measurements about the original part as well as its replacement if needed.  It highlights what has been done and what needs to be done and integrates both voice recognition and speech synthesis (via [SPaaS](#SPaas (Speech As A Service))) to make the electronics restoration process exceptionally efficient.
 
 In the future, it will gain even more capabilities for a range of other use cases.
 
 - Status:	 :heavy_check_mark: Complete
 
-### <u>WOPR Local AI</u>
+### <u>WOPR</u> Local AI
 
-A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) running Ollama and local LLM / inference models.  Runs Docker to augment speech and other related services.
+A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) running Ollama and local LLM / inference models.  Runs Docker to augment speech and other related services.  WOPR is the machine, Jarvis is the personality and knowledge base.
 
 - Status:	 :heavy_check_mark: Complete
 
@@ -177,7 +176,7 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 
 ### <u>3-Channel Optical Chronograph</u>
 
-(/chrono-3chan) -- A modernized version of an Oehler model 35P chronograph with wireless feature for better data management and analysis.
+(/chrono-3chan) -- A modernized version of an Oehler model 35P chronograph with wireless feature for better data management and analysis.  Will likely use a browser with a phone or tablet as the UI.
 
 - Status:	 :thought_balloon: Scoping
 
@@ -189,19 +188,19 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 
 ### <u>Acoustic Laser</u>
 
-(/acoustic-laser) -- OK, not a laser, but a collection of experimental acoustic beamforming experiments.  I'm mostly interested in adaptive sound delivery but also curious about microphone matrix arrays.
+(/acoustic-laser) -- OK, not a laser, but a collection of acoustic beamforming experiments.  I'm mostly interested in adaptive sound delivery but also curious about microphone matrix arrays.
 
 - Status:	 :thought_balloon: Scoping
 
 ### <u>Acoustic Trilaterator</u>
 
-(/acoustic-trilaterator) -- Microphone array for pinpointing bullet location on a target by signal analysis of the shockwave's acoustic signature and time difference of arrival.
+(/acoustic-trilaterator) -- Microphone array for pinpointing bullet location on a target by signal analysis of the shockwave's acoustic signature and time-difference-of-arrival.
 
 - Status:	 :thought_balloon: Scoping
 
 ### <u>Barbara Mandrel</u>
 
-(/mandrel-4humanity) -- A 3D design and engineering project to save humanity and all its dependencies.  (NOT Barbara Mandrell, who is a 3D person)
+(/mandrel-4humanity) -- A 3D design and engineering project to save humanity and all its dependencies by solving toilet paper frustrations.  :smile:  (NO RELATION whatsoever to Barbara Mandrell, who is a 3D person)
 
 - Status:	 :thought_balloon: Conceptual
 
