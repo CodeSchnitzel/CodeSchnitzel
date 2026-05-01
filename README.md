@@ -10,7 +10,7 @@ Updated 4/30/2026
 
 ### <u>AI Lab Automation Suite (aka JARVIS)</u>
 
-(/lab-automation) -- An AI driven laboratory instrument test orchestration suite.  JARVIS constructs and administers complex test and experimental procedures based on natural language requests.  It considers the capabilities & limitations of lab instrumentation, follows safety guidelines and gathers & analyzes data.  JARVIS combines local AI with cloud-based AI.
+(/lab-automation) -- An AI-driven laboratory instrument test orchestration suite.  JARVIS constructs and administers complex test and experimental procedures based on natural language requests.  It considers the capabilities & limitations of lab instrumentation, follows safety guidelines and gathers & analyzes data.  JARVIS combines local AI [WOPR](#WOPR Local AI) with cloud-based AI and leverages my local "Deep Knowledge Stockpile" service.
 
 For its first test to ensure it could communicate with instruments, it self-discovered a real problem with a power supply.  JARVIS brought this to my attention and worked through problem identification.   It turned out to be a faulty switch between test instruments.
 - Status:
