@@ -1,12 +1,12 @@
 # A Brief Overview of Projects In The CodeSchnitzel Lab #
 
-Updated 4/30/2026
+Updated 5/12/2026
 
 [toc]
 
 ------
 
-## Active Projects (8 projects with 22 sub-projects)
+## Active Projects (9 projects with 24 sub-projects)
 
 ### <u>AI Lab Automation Suite (aka JARVIS)</u>
 
@@ -42,19 +42,24 @@ For its first test to ensure it could communicate with instruments, it self-disc
 ### <u>Infrastructure Build Out Project</u>
 (/infrastructure) -- This is an ever-evolving project to build network services, VM's, LXC containers and physical devices to facilitate all development & lab activities.
 - Services in development:
-     - Deep Knowledge Stockpile (expanded from Andrej Karpathy's "LLM Wiki" idea)
      - Vision services (planned as a part of the Insightful Observer project)
-     - Internal security layering & monitoring
+     - High availability for VM infrastructure
+     - Conversion of local AI from a VM to a physical machine
+     - NAS upgrades
+     - Main workstation upgrade
 - Services deployed:
      - Upgraded, simplified & hardened firewall
      - Internal reverse proxy, VPN & certificate authority
-     - Ad blocking (Pi-Hole)
+     - Ad & malware blocking (Pi-Hole)
      - Wide area notifications
      - Data management stack (SQL Server, Prometheus, InfluxDB)
      - Data collection & analytics (Mosquitto, Telegraf, Grafana, etc.)
      - Artificial intelligence core (Ollama, Jarvis, AI tool kits, etc.)
-     - File sync (SyncThing)
+     - Strategic file sync across devices
      - SPeech As A Service
+     - Deep Knowledge Stockpile
+     - Internal security layering & monitoring
+     - Internal IoT network
 - Status:	Permanent / Ongoing
 
 ### <u>Mellanox NIC Active Cooler</u>
@@ -71,7 +76,7 @@ For its first test to ensure it could communicate with instruments, it self-disc
 
 (/star-trkr) A collection of sub-projects that combine into a hardware and software package for astrophotography.  Named for the command reference silk-screened onto the guidance & navigation control panel in the Apollo Command Module and Lunar Module.
 
-#### *Star Brain*
+#### *STAR TRKR:  Star Brain*
 
 (/star-trkr/star-brain)  -- The computer and software that control STAR TRKR and interface with various hardware components.
 - Status:
@@ -84,11 +89,11 @@ For its first test to ensure it could communicate with instruments, it self-disc
   | Azimuth & elevation stages | :heavy_check_mark: Mechanics built<br />:heavy_check_mark: Elevation is motorized<br />:thought_balloon: Need to build azimuth motor adapter + controller circuits |
   | Polar alignment fixture    | :construction: In mechanical design                          |
 
-#### *Star Finder*
+#### *STAR TRKR:  Star Finder*
 
 (/star-trkr/star-finder) -- An integration of the [Astro Discovery](#Astro Discovery) project into [Star Brain](#Star Brain) to merge plate solving and eventually polar alignment into the overall platform control.  This will become a software integration with the main controller computer.
 
-#### *Tracker Muscle* (Right Ascension Axis)
+#### *STAR TRKR:  Tracker Muscle* (Right Ascension Axis)
 
 (/star-trkr/trkr-muscle) -- A high precision linear actuator to control STAR TRKR's right ascension axis, matching the angular rotation of the Earth to keep camera equipment fixed on a single aimpoint.
 - Status:
@@ -98,12 +103,45 @@ For its first test to ensure it could communicate with instruments, it self-disc
   - :heavy_check_mark: Was used successfully for the April 8, 2024 total solar eclipse using prototype controller.
   	- Photo:  <a href="images/IMG_0218_1080.JPG" target="_blank">STAR TRKR, April 8 2024 Total Eclipse</a>
 
+### <u>Stuff Of Things</u>
+
+(/stuff-of-things) -- Yeah, it had to happen eventually -- the IoT project.  In order for JARVIS to properly interact with the physical world (short of getting a robot body), I needed to give him ears and a voice all around the house and the ability to control lighting, equipment and appliances.  So that leads us into a bunch of control devices and an IoT subnet with all the layers of security that go along with that.
+
+#### *Stuff Of Things:  IoT Network*
+
+(/stuff-of-things/network) -- Dedicated IoT WiFi gateway.  Multi-layer firewall enforcement and strict isolation of devices.
+
+- Status:
+  - :heavy_check_mark: Design approved
+  - :heavy_check_mark: Installed, penetration tested, telemetry & logging stack working
+
+#### *Stuff Of Things:  Lighting*
+
+(/stuff-of-things/lighting) -- Smart-switch / smart-plug control of lighting & devices via the existing message broker.  Cloud-independent hardware only; no phone-home devices.
+- Status:
+  - :heavy_check_mark: Several lighting and appliance control devices installed & tested
+
+#### *Stuff Of Things:  Voice Control & Response*
+
+(/stuff-of-things/voice) -- A fun feature of this project is a bunch of smart microphones that have just enough intelligence to listen for an activation phrase, then stream whatever verbal command that follows to JARVIS.  This gives JARVIS location awareness and the ability to direct verbal responses to the right location as well as understanding the context of commands.  "Lights on" means something different depending on where it's spoken.
+
+No cloud.  No internet.
+
+For now, the idea is to have enough self-designed & built smart microphones around the house to make this work, but it may evolve into phased microphone arrays that can sense direction from a single point.
+
+- Status:
+  - :heavy_check_mark: Planning complete
+  - :heavy_check_mark: JARVIS AI agent tool for device control implemented
+  - :heavy_check_mark: Hardware for the first 3 smart mic prototypes in-hand
+  - :construction: Phase 1 smart mic prototype bring-up paused due to other lab work competing for resources
+
 ### <u>ThermaLog</u>
 
 A high precision, high accuracy logger that monitors multiple platinum wire temperature sensors as well as ambient environment conditions.  ThermaLog emphasizes oversampling and precisely time-correlated measurements for both real time and offline analysis.
 - Status:
-  - :heavy_check_mark: Fully prototyped & tested -- prototype is in regular use in the lab
-  - :construction: Pre-production validation for a finished package (not public yet)
+  - :heavy_check_mark: Fully prototyped & tested
+  - :heavy_check_mark: Prototype is in regular use in the lab
+  - :construction: Pre-production validation for a finished package in progress (not public yet)
 
 ### <u>VetteDirectional</u>
 
@@ -116,7 +154,7 @@ A high precision, high accuracy logger that monitors multiple platinum wire temp
 
 ## Completed Projects (7 projects) ## 
 
-### [Astro Discovery / Star Finder](#https://github.com/CodeSchnitzel/astro-discovery)
+### [<u>Astro Discovery / Star Finder</u>](#https://github.com/CodeSchnitzel/astro-discovery)
 
 (/astro-discovery) -- Started as a portable VM for running plate solver software in the field to analyze an astrophotography photos and determine, based on stored star maps, what the point of aim, orientation and field of view are.  The project morphed into a Raspberry Pi Zero 2W appliance that can optionally connect directly to the camera and present a user interface through a WiFi connected phone.  It calculates point-of-aim error magnitude and direction to speed up accurate aiming.
 
@@ -134,7 +172,7 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
 
 - Status:	 :heavy_check_mark: Complete
 
-### [Photo Deduplicator](#https://github.com/CodeSchnitzel/Photo-Dedupe)
+### [<u>Photo Deduplicator</u>](#https://github.com/CodeSchnitzel/Photo-Dedupe)
 
 (/photo-dedupe) -- A GoLang program for identifying duplicates among a large collection of photos, regardless of orientation or resolution, using perceptual fingerprinting.  Includes a facility to allow easy confirmation and resolution.
 
@@ -148,9 +186,9 @@ This project will later be incorporated into the [STAR TRKR](#STAR TRKR) project
 
 ### <u>SPaaS</u> (Speech As A Service)
 
-JARVIS and other machines around my network now share centralized on-premise GPU-based Text-To-Speech and Speech-To-Text.  Heavy lifting happens on my [WOPR](#WOPR Local AI) machine (local AI engine) and audio is pipelined to and from a Windows desktop machine via a compiled service because that's where the best audio hardware is.  Any machine that can call an API or connect to a net socket can use the service.  JARVIS has his own unique voice and other devices around the lab have distinct voices as well.
+JARVIS and other machines around my network now share centralized on-premise GPU-based Text-To-Speech and Speech-To-Text.  Heavy lifting happens on my [WOPR](#WOPR Local AI) machine (local AI engine).  Audio pickup and delivery is location-aware, but within my lab, it is pipelined to and from a Windows desktop machine via a compiled service because that's where the best audio hardware is.  Any authorized machine that can call an API or connect to a net socket can use the service.  JARVIS has his own unique voice and other devices around the lab have distinct voices as well.
 
-Also implemented VPN to allow secure and seamless conversational access from anywhere via iPhone, iPad, laptop, etc.
+Also implemented VPN to allow secure and seamless conversational access from anywhere via iPhone, iPad, laptop, etc.  This fits the location-aware scheme; voice works on my phone, my laptops or anywhere I am.
 
 - Status:	​ :heavy_check_mark: Complete
 
@@ -166,9 +204,9 @@ In the future, it will gain even more capabilities for a range of other use case
 
 ### <u>WOPR</u> Local AI
 
-A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) running Ollama and local LLM / inference models.  Runs Docker to augment speech and other related services.  WOPR is the machine, Jarvis is the personality and knowledge base.
+A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) running Ollama and local LLM / inference models.  Runs Docker to augment speech and other related services.  WOPR is the machine, JARVIS is the personality and knowledge base.
 
-- Status:	 :heavy_check_mark: Complete
+- Status:	 :heavy_check_mark: Complete (conversion from a VM to physical is underway though)
 
 ------
 
@@ -254,7 +292,7 @@ This will have an internal temperature-compensated crystal oscillator (with an a
 
 Useful for estimating terrestrial radio coverage.  Inspired by tools published by Green Bay Professional Packet Radio.
 
-- Status:	 :thought_balloon: Data gathered / awaiting prioritization
+- Status:	 :thought_balloon: Data gathered / awaiting prioritization, considering more modern datasets
 
 ### <u>Mains Monitor</u>
 
@@ -264,7 +302,7 @@ Useful for estimating terrestrial radio coverage.  Inspired by tools published b
 
 ### <u>OCXO Calibrator</u>
 
-(/ocxo-cal) -- An automated lab instrument for trimming free-running OCXO oscillators to serve as portable time standards for independent data acquisition devices that need to take time-coherent measurements.  Will use Atomic Director as the calibration standard.
+(/ocxo-cal) -- An automated lab instrument for trimming free-running OCXO oscillators to serve as portable short-term time standards for independent data acquisition devices that need to take time-coherent measurements.  Will use Atomic Director as the calibration standard.
 
 - Status:	 :thought_balloon: Scoping
 
