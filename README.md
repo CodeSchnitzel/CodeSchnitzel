@@ -1,12 +1,12 @@
 # A Brief Overview of Projects In The CodeSchnitzel Lab #
 
-Updated 5/12/2026
+Updated 5/20/2026
 
 [toc]
 
 ------
 
-## Active Projects (9 projects with 24 sub-projects)
+## Active Projects (10 projects with 32 sub-projects)
 
 ### <u>AI Lab Automation Suite (aka JARVIS)</u>
 
@@ -39,27 +39,43 @@ For its first test to ensure it could communicate with instruments, it self-disc
   - :thought_balloon: Switching & Signals systems in scoping
   - :thought_balloon: Power Control & Monitoring in scoping
 
+### <u>Enhance-Enhance</u>
+
+(/enhance-enhance) -- Local AI-augmented video cleanup and upscaling for old home movies.  First for video digitized from Hi-8 and later to couple with an as-yet undefined (but well underway) project to build a custom 8mm film movie digitizer.  No re-inventing the wheel -- this is leveraging mostly common open source tools and some commercial software.
+
+- Status:
+  - :construction: Foundations & data model0
+  - :thought_balloon: Cleanup pipeline
+  - :thought_balloon: Scene detection
+  - :thought_balloon: Thermal supervisor (control CPU and GPU heat)
+  - :thought_balloon: Upscaler & encoder
+  - :thought_balloon: Metadata tools & static trimming
+  - :thought_balloon: Tuning notebook
+  - :thought_balloon: Batch & helpers
+
+
 ### <u>Infrastructure Build Out Project</u>
+
 (/infrastructure) -- This is an ever-evolving project to build network services, VM's, LXC containers and physical devices to facilitate all development & lab activities.
-- Services in development:
-     - Vision services (planned as a part of the Insightful Observer project)
-     - High availability for VM infrastructure
-     - Conversion of local AI from a VM to a physical machine
-     - NAS upgrades
-     - Main workstation upgrade
+- Services in development or in planning:
+     - :thought_balloon: Vision services (planned as a part of the Insightful Observer project)
+     - :construction: High availability for VM infrastructure
+     - :thought_balloon: Conversion of local AI from a VM to a physical machine
+     - :construction: NAS upgrades
+     - :construction: Main workstation upgrade
 - Services deployed:
-     - Upgraded, simplified & hardened firewall
-     - Internal reverse proxy, VPN & certificate authority
-     - Ad & malware blocking (Pi-Hole)
-     - Wide area notifications
-     - Data management stack (SQL Server, Prometheus, InfluxDB)
-     - Data collection & analytics (Mosquitto, Telegraf, Grafana, etc.)
-     - Artificial intelligence core (Ollama, Jarvis, AI tool kits, etc.)
-     - Strategic file sync across devices
-     - SPeech As A Service
-     - Deep Knowledge Stockpile
-     - Internal security layering & monitoring
-     - Internal IoT network
+     - :heavy_check_mark: Upgraded, simplified & hardened firewall
+     - :heavy_check_mark: Internal reverse proxy, VPN & certificate authority
+     - :heavy_check_mark: Ad & malware blocking (Pi-Hole)
+     - :heavy_check_mark: Wide area notifications
+     - :heavy_check_mark: Data management stack (SQL Server, Prometheus, InfluxDB)
+     - :heavy_check_mark: Data collection & analytics (Mosquitto, Telegraf, Grafana, etc.)
+     - :heavy_check_mark: Artificial intelligence core (Ollama, Jarvis, AI tool kits, etc.)
+     - :heavy_check_mark: Strategic file sync across devices
+     - :heavy_check_mark: SPeech As A Service
+     - :heavy_check_mark: Deep Knowledge Stockpile
+     - :heavy_check_mark: Internal security layering & monitoring
+     - :heavy_check_mark: Internal IoT network
 - Status:	Permanent / Ongoing
 
 ### <u>Mellanox NIC Active Cooler</u>
@@ -119,7 +135,7 @@ For its first test to ensure it could communicate with instruments, it self-disc
 
 (/stuff-of-things/lighting) -- Smart-switch / smart-plug control of lighting & devices via the existing message broker.  Cloud-independent hardware only; no phone-home devices.
 - Status:
-  - :heavy_check_mark: Several lighting and appliance control devices installed & tested
+  - :heavy_check_mark: Several lighting and appliance control devices installed & tested.  First automations built.
 
 #### *Stuff Of Things:  Voice Control & Response*
 
@@ -140,7 +156,7 @@ For now, the idea is to have enough self-designed & built smart microphones arou
 A high precision, high accuracy logger that monitors multiple platinum wire temperature sensors as well as ambient environment conditions.  ThermaLog emphasizes oversampling and precisely time-correlated measurements for both real time and offline analysis.
 - Status:
   - :heavy_check_mark: Fully prototyped & tested
-  - :heavy_check_mark: Prototype is in regular use in the lab
+  - :heavy_check_mark: Prototype is in regular use in the lab and getting periodic firmware improvements
   - :construction: Pre-production validation for a finished package in progress (not public yet)
 
 ### <u>VetteDirectional</u>
