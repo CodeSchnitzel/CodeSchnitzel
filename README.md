@@ -43,14 +43,20 @@ For its first test to ensure it could communicate with instruments, it self-disc
 
 (/enhance-enhance) -- Local AI-augmented video cleanup and upscaling for old home movies.  First for video digitized from Hi-8 and later to couple with an as-yet undefined (but well underway) project to build a custom 8mm film movie digitizer.  No re-inventing the wheel -- this is leveraging mostly common open source tools and some commercial software.
 
-Check out this upscale example!  The left is the original raw capture and the right is after processing through the cleanup stack and upscaler.  This is a preliminary test before fine-tuning:  <a href="images/iguana-comparison.html" target="_blank">Upscale demo</a>
+Check out this upscale example!  The left is the original raw capture and the right is after processing through the cleanup stack and upscaler.  This is a preliminary test before fine-tuning and before time base correction:  <a href="images/iguana-comparison.mp4" target="_blank">Upscale demo</a>
 
 - Status:
+  - :heavy_check_mark: Video digitization setup:
+    - Sony EV-C200 playback deck
+    - Hotronic AP-41 time base corrector
+    - VC500 video capture device (looking for better alternatives)
+    - SoundBlaster X-Fi Pro audio capture
+    - Optimized OBS Studio configuration for archival quality capture
   - :heavy_check_mark: Foundations & data model0
   - :heavy_check_mark: Cleanup pipeline
   - :heavy_check_mark: Scene detection
   - :heavy_check_mark: Thermal supervisor (control CPU and GPU heat)
-  - :heavy_check_mark: Upscaler & encoder
+  - :construction: Upscaler & encoder
   - :heavy_check_mark: Metadata tools & static trimming
   - :thought_balloon: Tuning notebook
   - :thought_balloon: Batch & helpers
@@ -62,7 +68,7 @@ Check out this upscale example!  The left is the original raw capture and the ri
 - Services in development or in planning:
      - :thought_balloon: Vision services (planned as a part of the Insightful Observer project)
      - :construction: High availability for VM infrastructure
-     - :thought_balloon: Conversion of local AI from a VM to a physical machine
+     - :construction: Conversion of local AI from a VM to a physical machine
      - :construction: NAS upgrades
      - :construction: Main workstation upgrade
 - Services deployed:
