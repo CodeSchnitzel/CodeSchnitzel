@@ -1,6 +1,6 @@
 # A Brief Overview of Projects In The CodeSchnitzel Lab #
 
-Updated 5/26/2026
+Updated 5/29/2026
 
 [toc]
 
@@ -68,9 +68,8 @@ Check out this upscale example!  The left is the original raw capture and the ri
 - Services in development or in planning:
      - :thought_balloon: Vision services (planned as a part of the Insightful Observer project)
      - :construction: High availability for VM infrastructure
+     - :construction: Main wifi network upgrade
      - :construction: Conversion of local AI from a VM to a physical machine
-     - :construction: NAS upgrades
-     - :construction: Main workstation upgrade
 - Services deployed:
      - :heavy_check_mark: Upgraded, simplified & hardened firewall
      - :heavy_check_mark: Internal reverse proxy, VPN & certificate authority
@@ -84,6 +83,8 @@ Check out this upscale example!  The left is the original raw capture and the ri
      - :heavy_check_mark: Deep Knowledge Stockpile
      - :heavy_check_mark: Internal security layering & monitoring
      - :heavy_check_mark: Internal IoT network
+     - :heavy_check_mark: NAS upgrades
+     - :heavy_check_mark: Main workstation upgrade
 - Status:	Permanent / Ongoing
 
 ### <u>Mellanox NIC Active Cooler</u>
