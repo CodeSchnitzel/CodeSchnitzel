@@ -1,6 +1,6 @@
 # A Brief Overview of Projects In The CodeSchnitzel Lab #
 
-Updated 5/29/2026
+Updated 5/30/2026
 
 [toc]
 
@@ -273,12 +273,6 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 
 - Status:	 :thought_balloon: Experimental / awaiting redesign
 
-### <u>Insightful Observer</u>
-
-(/vision/insightful-observer) -- A server-side observation system.  Leveraging the Serene Sentinel platform, camera devices report captures and metadata to an ingest endpoint; the server stores them, classifies them, analyzes content and surfaces significant events through dashboards and alerts. Hosts two server-bound products: *door-cam* (single-cam target classifier) and *field-mesh* (battery-powered mesh group with on-device pre-filtering).
-
-- Status:	 :thought_balloon: Charter restructured around server-side scope; awaiting lab infrastructure maturation and [*Serene Sentinel*](#Serene Sentinel) platform stabilization before product work begins
-
 ### <u>EZ Clock</u>
 
 (/easy-clock) -- Inexpensive, hassle-free clocks that can be placed anywhere within range of a WiFi network with NTP access.  Modular for a choice of displays including round TFT's that show traditional clock/watch faces, 7-segment displays, Burroughs Panaplex displays and even speech synthesis.  Benefits from the [7-Segment LED Display](#7-Segment LED Display) project and [Panaplex Plasma Display Driver](#Panaplex Plasma Display Driver) project.
@@ -290,6 +284,22 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 (/degauss-parts) A device that properly degausses small parts according to scientific principles rather than how cheaply can it be made.
 
 - Status:	 :thought_balloon: Awaiting prioritization
+
+### <u>Indoor Sky</u>
+
+(/indoor-sky) -- A concept for interior RGBW lighting that follows outdoor lighting conditions by using an 11-channel visible light spectrum sensor both inside and out in a closed feedback loop.
+
+A big challenge will be to design and build an exterior sensor (or sensors) that can withstand long-term sun and weather exposure without degrading either spectral response or total sensitivity.  Materials and construction techniques are being considered.
+
+An RGBW controller, LED strips and spectral sensor breakout have been acquired.
+
+- Status:	:thought_balloon: Contemplating.
+
+### <u>Insightful Observer</u>
+
+(/vision/insightful-observer) -- A server-side observation system.  Leveraging the Serene Sentinel platform, camera devices report captures and metadata to an ingest endpoint; the server stores them, classifies them, analyzes content and surfaces significant events through dashboards and alerts. Hosts two server-bound products: *door-cam* (single-cam target classifier) and *field-mesh* (battery-powered mesh group with on-device pre-filtering).
+
+- Status:	 :thought_balloon: Charter restructured around server-side scope; awaiting lab infrastructure maturation and [*Serene Sentinel*](#Serene Sentinel) platform stabilization before product work begins
 
 ### <u>Keithley SCAN2000 Card Clone</u>
 
