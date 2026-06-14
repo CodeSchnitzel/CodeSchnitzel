@@ -1,6 +1,6 @@
 # A Brief Overview of Projects In The CodeSchnitzel Lab #
 
-Updated 5/30/2026
+Updated 6/14/2026
 
 [toc]
 
@@ -48,16 +48,20 @@ Check out this upscale example!  The left is the original raw capture and the ri
 - Status:
   - :heavy_check_mark: Video digitization setup:
     - Sony EV-C200 playback deck
+    - Sony DVP-NS425P DVD player with SMPTE color bar disc as a calibration source
     - Hotronic AP-41 time base corrector
     - VC500 video capture device (looking for better alternatives)
     - SoundBlaster X-Fi Pro audio capture
-    - Optimized OBS Studio configuration for archival quality capture
-  - :heavy_check_mark: Foundations & data model0
+    - Optimized OBS Studio with waveform & vectorscope plugins for archival quality capture
+  - :heavy_check_mark: Foundations & data model
   - :heavy_check_mark: Cleanup pipeline
   - :heavy_check_mark: Scene detection
   - :heavy_check_mark: Thermal supervisor (control CPU and GPU heat)
+  - Content Management System
+    - :heavy_check_mark: Database layer
+    - :heavy_check_mark:  Scene/clip workbench -- detects clip transitions and allows scenes to be built from clips
+    - :construction: Library Navigator -- allows metadata enrichment, facilitates processing & enhancement tools, allows for A/B comparison and video evaluation
   - :construction: Upscaler & encoder
-  - :heavy_check_mark: Metadata tools & static trimming
   - :thought_balloon: Tuning notebook
   - :thought_balloon: Batch & helpers
 
@@ -67,8 +71,7 @@ Check out this upscale example!  The left is the original raw capture and the ri
 (/infrastructure) -- This is an ever-evolving project to build network services, VM's, LXC containers and physical devices to facilitate all development & lab activities.
 - Services in development or in planning:
      - :thought_balloon: Vision services (planned as a part of the Insightful Observer project)
-     - :construction: High availability for VM infrastructure
-     - :construction: Main wifi network upgrade
+     - :construction: High availability for VM infrastructure / fiber mesh
      - :construction: Conversion of local AI from a VM to a physical machine
 - Services deployed:
      - :heavy_check_mark: Upgraded, simplified & hardened firewall
@@ -84,6 +87,7 @@ Check out this upscale example!  The left is the original raw capture and the ri
      - :heavy_check_mark: Internal security layering & monitoring
      - :heavy_check_mark: Internal IoT network
      - :heavy_check_mark: NAS upgrades
+     - :heavy_check_mark: Main wifi network upgrade
      - :heavy_check_mark: Main workstation upgrade
 - Status:	Permanent / Ongoing
 
@@ -140,7 +144,7 @@ Check out this upscale example!  The left is the original raw capture and the ri
   - :heavy_check_mark: Design approved
   - :heavy_check_mark: Installed, penetration tested, telemetry & logging stack working
 
-#### *Stuff Of Things:  Lighting*
+#### *Stuff Of Things:  Lighting & Power Monitoring*
 
 (/stuff-of-things/lighting) -- Smart-switch / smart-plug control of lighting & devices via the existing message broker.  Cloud-independent hardware only; no phone-home devices.
 - Status:
@@ -235,7 +239,7 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 
 ------
 
-## Queued Projects (24 projects) ## 
+## Queued Projects (25 projects) ## 
 
 ### <u>3-Channel Optical Chronograph</u>
 
@@ -284,6 +288,13 @@ A powerful VM with dedicated GPU hardware (PCIe passthrough from the VM host) ru
 (/degauss-parts) A device that properly degausses small parts according to scientific principles rather than how cheaply can it be made.
 
 - Status:	 :thought_balloon: Awaiting prioritization
+
+### <u>Half Track</u>
+(/half-track) An exciting data recovery project to read degraded floppy disk content in the analog domain, tapping directly into head amplifier outputs.  By also microstepping across the track surfaces we can build a high-resolution 3D magnetic map of disks.  The idea is to extract data statistically from disks that don't trip the thresholds that normal drive electronics require.  By microstepping at a sub-track level, we can overcome alignment problems as well.
+
+It is expected that this project will have a lot in common with the public [vhs-decode](https://github.com/oyvindln/vhs-decode), 8mm-decode and [ld-decode](https://github.com/happycube/ld-decode) projects and will benefit from it.  Consequently, the hardware investment required for this project will also benefit back to my enhance-enhance video archiving project.
+
+- Status:	:thought_balloon: Scoping and technology consideration.
 
 ### <u>Indoor Sky</u>
 
